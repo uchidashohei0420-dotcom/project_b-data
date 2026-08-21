@@ -1,7 +1,5 @@
-"""TEMPORARY diagnostic script — not part of the pipeline. Run via a throwaway workflow
-step to discover real URLs from inside GitHub Actions (this repo's dev sandbox has no
-general internet egress, so this is the only way to learn real site structure).
-Delete this file once the real scraper URLs/selectors are fixed.
+"""TEMPORARY diagnostic script — see prior commit message for context. Second pass:
+inspect specific listing pages in more depth now that the first pass found real URLs.
 """
 from __future__ import annotations
 
@@ -12,44 +10,58 @@ from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"}
 
-TARGETS = [
-    "https://keraeiko.com/",
-    "https://atashinchi30th-anime.shin-ei-animation.jp/",
-    "https://www.loft.co.jp/",
-    "https://www.animate-onlineshop.jp/",
-]
 
-KEYWORDS = ("news", "お知らせ", "イベント", "event", "search", "検索", "商品", "product", "goods")
+def dump_repeating_structure(url: str, *, max_links: int = 40) -> None:
+    print(f"\n===== {url} =====")
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
+    except Exception as exc:  # noqa: BLE001
+        print(f"FETCH ERROR: {exc}")
+        return
+    print(f"status={resp.status_code} final_url={resp.url} bytes={len(resp.content)}")
+
+    soup = BeautifulSoup(resp.text, "lxml")
+
+    # Print class attributes of elements that look like repeating list items (article, li).
+    from collections import Counter
+
+    class_counter: Counter[str] = Counter()
+    for tag_name in ("article", "li", "div"):
+        for el in soup.find_all(tag_name):
+            classes = el.get("class")
+            if classes:
+                class_counter[f"{tag_name}.{'.'.join(classes)}"] += 1
+    print("Most common repeated tag.class combos (candidates for LISTING_ITEM_SELECTOR):")
+    for combo, count in class_counter.most_common(15):
+        if count >= 3:
+            print(f"  {count:4d}  {combo}")
+
+    print("\nAll links containing '/topics/' or a news-detail-looking path:")
+    seen = set()
+    n = 0
+    for a in soup.select("a[href]"):
+        href = a.get("href", "")
+        if "/topics" in href or "/news" in href or "/blog" in href:
+            text = a.get_text(strip=True)
+            key = (href, text[:40])
+            if key in seen:
+                continue
+            seen.add(key)
+            print(f"  {href!r}  text={text[:40]!r}")
+            n += 1
+            if n >= max_links:
+                break
+
+    print("\nAll <nav> / menu links (unfiltered, first 30):")
+    for nav in soup.select("nav")[:2]:
+        for a in nav.select("a[href]")[:30]:
+            print(f"  NAV: href={a.get('href')!r} text={a.get_text(strip=True)[:40]!r}")
 
 
 def main() -> None:
-    for url in TARGETS:
-        print(f"\n===== {url} =====")
-        try:
-            resp = requests.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
-        except Exception as exc:  # noqa: BLE001
-            print(f"FETCH ERROR: {exc}")
-            continue
-        print(f"status={resp.status_code} final_url={resp.url} bytes={len(resp.content)}")
-
-        soup = BeautifulSoup(resp.text, "lxml")
-        seen = set()
-        for a in soup.select("a[href]"):
-            href = a.get("href", "")
-            text = a.get_text(strip=True)
-            haystack = (href + " " + text).lower()
-            if any(k.lower() in haystack for k in KEYWORDS):
-                key = (href, text[:40])
-                if key in seen:
-                    continue
-                seen.add(key)
-                print(f"  LINK: href={href!r} text={text[:40]!r}")
-
-        forms = soup.select("form")
-        for form in forms[:5]:
-            print(f"  FORM: action={form.get('action')!r} method={form.get('method')!r}")
-            for inp in form.select("input[name]"):
-                print(f"    INPUT: name={inp.get('name')!r} type={inp.get('type')!r}")
+    dump_repeating_structure("https://keraeiko.com/category/topics")
+    dump_repeating_structure("https://atashinchi30th-anime.shin-ei-animation.jp/")
+    dump_repeating_structure("https://www.loft.co.jp/news/")
 
 
 if __name__ == "__main__":
