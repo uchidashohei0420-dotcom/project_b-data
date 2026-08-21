@@ -1,6 +1,5 @@
-"""Offline test: stubs subprocess.run so this never invokes the real agent-reach CLI or
-touches a real X cookie."""
-import json
+"""Offline test: stubs subprocess.run so this never invokes the real twitter-cli or
+touches real X credentials."""
 import subprocess
 from pathlib import Path
 from unittest.mock import patch
@@ -17,8 +16,13 @@ def _fake_completed_process(stdout: str) -> subprocess.CompletedProcess:
     return subprocess.CompletedProcess(args=[], returncode=0, stdout=stdout, stderr="")
 
 
+def _set_credentials(monkeypatch):
+    monkeypatch.setenv("TWITTER_AUTH_TOKEN", "dummy-token")
+    monkeypatch.setenv("TWITTER_CT0", "dummy-ct0")
+
+
 def test_classifies_event_goods_and_news_correctly(monkeypatch):
-    monkeypatch.setenv("AGENT_REACH_X_COOKIE", "dummy-cookie")
+    _set_credentials(monkeypatch)
     fixture_json = FIXTURE.read_text(encoding="utf-8")
 
     with patch.object(sns_x.subprocess, "run", return_value=_fake_completed_process(fixture_json)):
@@ -26,7 +30,6 @@ def test_classifies_event_goods_and_news_correctly(monkeypatch):
 
     # timeline + search both hit the same fixture in this test, so 3 posts x 2 calls = 6.
     assert len(items) == 6
-    types = {item.title[:6]: item.type for item in items}
     assert any(item.type.value == "event" for item in items)  # "トークイベント" -> event
     assert any(item.type.value == "goods" for item in items)  # "グッズ" + "発売" -> goods
     assert any(item.type.value == "news" for item in items)  # ambiguous weather post -> news
@@ -34,8 +37,19 @@ def test_classifies_event_goods_and_news_correctly(monkeypatch):
     assert all(item.raw_snippet for item in items)
 
 
-def test_missing_cookie_raises_source_error_without_calling_subprocess(monkeypatch):
-    monkeypatch.delenv("AGENT_REACH_X_COOKIE", raising=False)
+def test_missing_credentials_raises_source_error_without_calling_subprocess(monkeypatch):
+    monkeypatch.delenv("TWITTER_AUTH_TOKEN", raising=False)
+    monkeypatch.delenv("TWITTER_CT0", raising=False)
+
+    with patch.object(sns_x.subprocess, "run") as mock_run:
+        with pytest.raises(SourceError):
+            sns_x.SnsXSource().collect()
+        mock_run.assert_not_called()
+
+
+def test_partial_credentials_is_treated_as_not_configured(monkeypatch):
+    monkeypatch.setenv("TWITTER_AUTH_TOKEN", "dummy-token")
+    monkeypatch.delenv("TWITTER_CT0", raising=False)
 
     with patch.object(sns_x.subprocess, "run") as mock_run:
         with pytest.raises(SourceError):
@@ -44,7 +58,7 @@ def test_missing_cookie_raises_source_error_without_calling_subprocess(monkeypat
 
 
 def test_cli_not_found_raises_source_error(monkeypatch):
-    monkeypatch.setenv("AGENT_REACH_X_COOKIE", "dummy-cookie")
+    _set_credentials(monkeypatch)
 
     with patch.object(sns_x.subprocess, "run", side_effect=FileNotFoundError()):
         with pytest.raises(SourceError):

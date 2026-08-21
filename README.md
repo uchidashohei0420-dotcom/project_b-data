@@ -15,16 +15,17 @@
 
 ## セットアップ
 
-1. リポジトリの `Settings → Secrets and variables → Actions` で `AGENT_REACH_X_COOKIE` を登録する(Agent Reach用、専用の捨てXアカウントのCookie値)。
-2. `Actions`タブから`Collect feed`ワークフローを`workflow_dispatch`で手動実行し、グリーンになることを確認する。
-3. 問題なければ、schedule(1日3回)が自動的に有効になります(追加設定は不要)。
+1. 専用の捨てXアカウントでログインし、Cookie-Editor拡張機能等で`auth_token`と`ct0`の値をエクスポートする。
+2. リポジトリの `Settings → Secrets and variables → Actions` で `TWITTER_AUTH_TOKEN` と `TWITTER_CT0` を登録する(2つとも必須。片方だけだと未設定扱いになりSNS収集がスキップされます)。
+3. `Actions`タブから`Collect feed`ワークフローを`workflow_dispatch`で手動実行し、グリーンになることを確認する。
+4. 問題なければ、schedule(1日3回)が自動的に有効になります(追加設定は不要)。
 
 ## ローカルでの実行・テスト
 
 ```bash
 pip install -r collector/requirements.txt pytest
 pytest                      # オフラインのfixtureベーステスト
-AGENT_REACH_X_COOKIE=xxx python -m collector.main   # 実際に収集してcommit&pushまで行う(要git remote設定)
+TWITTER_AUTH_TOKEN=xxx TWITTER_CT0=yyy python -m collector.main   # 実際に収集してcommit&pushまで行う(要git remote設定)
 python scripts/validate_feed.py                      # data/feed.jsonをスキーマ検証するだけ
 ```
 

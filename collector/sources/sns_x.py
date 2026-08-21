@@ -1,16 +1,22 @@
-"""Collects from X (Twitter) via the Agent Reach CLI (https://github.com/Panniantong/agent-reach):
-(1) the official account's recent timeline, (2) a keyword search for "あたしンチ".
+"""Collects from X (Twitter) via twitter-cli (https://github.com/public-clis/twitter-cli),
+the backend that `agent-reach install` sets up: (1) the official account's recent
+timeline, (2) a keyword search for "あたしンチ".
 
 Ambiguous posts (neither a clear event announcement nor a clear goods announcement) are
 classified as `news` rather than forced into event/goods — see docs/PLAN.md's schema
 notes. Both sub-collections are treated as source_type=sns (low confidence).
 
+Verified against twitter-cli's public README (2026-08): the binary is invoked directly
+as `twitter` (not `agent-reach twitter ...` — agent-reach is only the installer/doctor
+tool), subcommands are `user-posts <handle> --json` and `search "<keyword>" --json`, and
+auth is two cookie values (`TWITTER_AUTH_TOKEN` + `TWITTER_CT0`), not a single token.
+
 TODO before first real run:
-- Run `agent-reach doctor` locally to confirm the installed CLI's exact subcommand names
-  and output shape; the invocation below is written from the project's documented
-  capabilities (cookie-auth, "read & search Twitter") but not yet verified against a real
-  run. Adjust `_TIMELINE_ARGS`/`_SEARCH_ARGS` and `_parse_agent_reach_json` accordingly.
-- Use a dedicated throwaway X account's cookie — never the maintainer's main account.
+- The README doesn't document the exact JSON field names per post. `_draft_from_post`
+  below tries a few plausible key names (`text`/`full_text`, `url`/`permalink`) — run
+  `twitter user-posts <handle> --json` once locally with real credentials and adjust to
+  match the actual output.
+- Use a dedicated throwaway X account's cookies — never the maintainer's main account.
 """
 from __future__ import annotations
 
@@ -24,8 +30,8 @@ from .base import Source, SourceError
 OFFICIAL_HANDLE = "atashinchi_new"
 SEARCH_KEYWORD = "あたしンチ"
 
-_TIMELINE_ARGS = ["agent-reach", "twitter", "timeline", OFFICIAL_HANDLE, "--json"]
-_SEARCH_ARGS = ["agent-reach", "twitter", "search", SEARCH_KEYWORD, "--json"]
+_TIMELINE_ARGS = ["twitter", "user-posts", OFFICIAL_HANDLE, "--json"]
+_SEARCH_ARGS = ["twitter", "search", SEARCH_KEYWORD, "--json"]
 
 # A post is only classified as event/goods if it clearly signals one; keyword lists are
 # intentionally narrow to keep false positives low (an over-eager classifier here would
@@ -42,40 +48,40 @@ def _classify(text: str) -> ItemType:
     return ItemType.NEWS
 
 
-def _run_agent_reach(args: list[str], *, cookie: str) -> list[dict]:
+def _run_twitter_cli(args: list[str], *, auth_token: str, ct0: str) -> list[dict]:
     try:
         result = subprocess.run(
             args,
-            env={"AGENT_REACH_X_COOKIE": cookie},
+            env={"TWITTER_AUTH_TOKEN": auth_token, "TWITTER_CT0": ct0},
             capture_output=True,
             text=True,
             timeout=60,
             check=True,
         )
     except subprocess.CalledProcessError as exc:
-        raise SourceError(f"agent-reach exited {exc.returncode}: {exc.stderr[:500]}") from exc
+        raise SourceError(f"twitter-cli exited {exc.returncode}: {exc.stderr[:500]}") from exc
     except subprocess.TimeoutExpired as exc:
-        raise SourceError(f"agent-reach timed out: {' '.join(args)}") from exc
+        raise SourceError(f"twitter-cli timed out: {' '.join(args)}") from exc
     except FileNotFoundError as exc:
-        raise SourceError("agent-reach CLI is not installed on PATH") from exc
+        raise SourceError("twitter CLI is not installed on PATH (run `agent-reach install`)") from exc
 
     try:
         parsed = json.loads(result.stdout)
     except json.JSONDecodeError as exc:
-        raise SourceError(f"agent-reach returned non-JSON output: {exc}") from exc
+        raise SourceError(f"twitter-cli returned non-JSON output: {exc}") from exc
 
-    # Expected shape: a list of post objects, or {"posts": [...]}. Accept either until the
-    # real CLI output is verified (see module TODO).
+    # Expected shape: a list of post objects, or {"posts": [...]} / {"tweets": [...]}.
+    # Accept any of these until the real output is verified (see module TODO).
     if isinstance(parsed, dict):
-        parsed = parsed.get("posts", [])
+        parsed = parsed.get("posts") or parsed.get("tweets") or parsed.get("data") or []
     if not isinstance(parsed, list):
-        raise SourceError("unexpected agent-reach output shape")
+        raise SourceError("unexpected twitter-cli output shape")
     return parsed
 
 
 def _draft_from_post(post: dict, *, source_name: str) -> FeedItemDraft | None:
-    text = post.get("text") or post.get("content")
-    url = post.get("url") or post.get("permalink")
+    text = post.get("text") or post.get("full_text") or post.get("content")
+    url = post.get("url") or post.get("permalink") or post.get("link")
     if not text or not url:
         return None
 
@@ -93,21 +99,24 @@ class SnsXSource(Source):
     name = "sns_x"
 
     def collect(self) -> list[FeedItemDraft]:
-        cookie = config.agent_reach_cookie()
-        if not cookie:
-            # Not a hard failure: SNS is one of three source categories, and a missing
-            # cookie (not yet configured, or expired) shouldn't fail the whole run.
-            raise SourceError(f"{config.AGENT_REACH_X_COOKIE_ENV} is not set; skipping SNS collection")
+        credentials = config.twitter_credentials()
+        if not credentials:
+            # Not a hard failure: SNS is one of three source categories, and missing
+            # credentials (not yet configured, or expired) shouldn't fail the whole run.
+            raise SourceError(
+                f"{config.TWITTER_AUTH_TOKEN_ENV}/{config.TWITTER_CT0_ENV} not set; skipping SNS collection"
+            )
+        auth_token, ct0 = credentials
 
         items: list[FeedItemDraft] = []
 
-        timeline_posts = _run_agent_reach(_TIMELINE_ARGS, cookie=cookie)
+        timeline_posts = _run_twitter_cli(_TIMELINE_ARGS, auth_token=auth_token, ct0=ct0)
         for post in timeline_posts:
             draft = _draft_from_post(post, source_name=f"@{OFFICIAL_HANDLE}")
             if draft:
                 items.append(draft)
 
-        search_posts = _run_agent_reach(_SEARCH_ARGS, cookie=cookie)
+        search_posts = _run_twitter_cli(_SEARCH_ARGS, auth_token=auth_token, ct0=ct0)
         for post in search_posts:
             draft = _draft_from_post(post, source_name=f"X検索: {SEARCH_KEYWORD}")
             if draft:

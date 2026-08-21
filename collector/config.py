@@ -19,8 +19,17 @@ USER_AGENT = "AtashinchiWatchCollector/1.0 (+personal hobby project; contact via
 SOURCE_FAILURE_THRESHOLD = 0.5
 
 # --- secrets: names only, values come from the environment at runtime ---
-AGENT_REACH_X_COOKIE_ENV = "AGENT_REACH_X_COOKIE"
+# twitter-cli (the backend agent-reach installs) authenticates via these two cookie
+# values, not a single token — see https://github.com/public-clis/twitter-cli.
+TWITTER_AUTH_TOKEN_ENV = "TWITTER_AUTH_TOKEN"
+TWITTER_CT0_ENV = "TWITTER_CT0"
 
 
-def agent_reach_cookie() -> str | None:
-    return os.environ.get(AGENT_REACH_X_COOKIE_ENV) or None
+def twitter_credentials() -> tuple[str, str] | None:
+    """Returns (auth_token, ct0) if both are set, else None. Both-or-nothing: a partial
+    credential pair would fail auth anyway and is easier to diagnose as "not configured"."""
+    auth_token = os.environ.get(TWITTER_AUTH_TOKEN_ENV)
+    ct0 = os.environ.get(TWITTER_CT0_ENV)
+    if auth_token and ct0:
+        return auth_token, ct0
+    return None

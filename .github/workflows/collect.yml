@@ -27,10 +27,15 @@ jobs:
 
       - run: pip install -r collector/requirements.txt
 
-      # TODO: verify the actual install command for Agent Reach (https://github.com/Panniantong/agent-reach)
-      # before the first real run — this assumes a pip-installable CLI, unverified.
-      - run: pip install agent-reach || echo "::warning::agent-reach install failed; sns_x collection will be skipped this run"
+      # Installs twitter-cli (the backend agent-reach sets up). Verified against
+      # https://github.com/Panniantong/agent-reach and https://github.com/public-clis/twitter-cli
+      # READMEs (2026-08); not yet exercised in a real Actions run — if this breaks, SNS
+      # collection is skipped for the run (fault-isolated) rather than failing the job.
+      - run: |
+          pip install https://github.com/Panniantong/agent-reach/archive/main.zip
+          agent-reach install --env=auto || echo "::warning::agent-reach install failed; sns_x collection will be skipped this run"
 
       - run: python -m collector.main
         env:
-          AGENT_REACH_X_COOKIE: ${{ secrets.AGENT_REACH_X_COOKIE }}
+          TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
+          TWITTER_CT0: ${{ secrets.TWITTER_CT0 }}
