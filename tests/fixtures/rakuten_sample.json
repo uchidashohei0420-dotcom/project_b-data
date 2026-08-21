@@ -1,0 +1,26 @@
+{
+  "Items": [
+    {
+      "itemName": "あたしンチ 30周年記念アクリルスタンド(ユズヒコ)",
+      "itemPrice": 2200,
+      "itemUrl": "https://item.rakuten.co.jp/sampleshop/atashinchi-goods-1/",
+      "shopName": "サンプルショップ",
+      "mediumImageUrls": [
+        { "imageUrl": "https://thumbnail.image.rakuten.co.jp/sample1.jpg" }
+      ]
+    },
+    {
+      "itemName": "あたしンチ もこもこクッション(画像なし)",
+      "itemPrice": "4400",
+      "itemUrl": "https://item.rakuten.co.jp/sampleshop/atashinchi-goods-2/",
+      "shopName": "サンプルショップ2",
+      "mediumImageUrls": []
+    },
+    {
+      "itemName": "タイトルはあるがURLが欠けているアイテム(スキップされるべき)",
+      "itemPrice": 1000
+    }
+  ],
+  "count": 3,
+  "page": 1
+}

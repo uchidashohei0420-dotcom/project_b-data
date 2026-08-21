@@ -33,3 +33,12 @@ def twitter_credentials() -> tuple[str, str] | None:
     if auth_token and ct0:
         return auth_token, ct0
     return None
+
+
+# Rakuten Web Service application ID (free, self-service at https://webservice.rakuten.co.jp/).
+# Not a high-sensitivity secret, but rate-limited per key, so kept out of the repo anyway.
+RAKUTEN_APP_ID_ENV = "RAKUTEN_APP_ID"
+
+
+def rakuten_app_id() -> str | None:
+    return os.environ.get(RAKUTEN_APP_ID_ENV) or None

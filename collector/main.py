@@ -21,21 +21,24 @@ from . import config
 from .dedupe import merge
 from .models import FeedItem, FeedItemDraft, ItemType, SourceType
 from .sources.base import Source, SourceError
-from .sources.ec_amazon import ECAmazonSource
+from .sources.ec_rakuten import ECRakutenSource
 from .sources.official_keraeiko import OfficialKeraeikoSource
 from .sources.sns_x import SnsXSource
 
-# ec_animate.ECAnimateSource, ec_loft.ECLoftSource, and official_30th.Official30thSource
-# are deliberately NOT imported/wired in here — verified against the live sites
-# (2026-08-21) to be unreachable via plain `requests` (bot-protection blocks / no real
-# content), see each module's docstring for specifics and what re-enabling would need.
+# ec_animate.ECAnimateSource and ec_loft.ECLoftSource are deliberately NOT imported/wired
+# in here — verified against the live sites (2026-08-21) to be unreachable via plain
+# `requests` (CDN bot-protection blocks), see each module's docstring for specifics and
+# what re-enabling would need (Playwright, most likely). official_30th.py was deleted
+# outright (the site has no real news section at all, not a scraping problem). ec_amazon
+# was dropped in favor of ec_rakuten.py — same reasoning: highest ToS/bot-detection risk
+# of any source, replaced by a legitimate free JSON API that doesn't need scraping at all.
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("collector")
 
 ALL_SOURCES: list[type[Source]] = [
     OfficialKeraeikoSource,
-    ECAmazonSource,
+    ECRakutenSource,
     SnsXSource,
 ]
 

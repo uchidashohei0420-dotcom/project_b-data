@@ -7,9 +7,15 @@ import requests
 from . import config
 
 
-def get(url: str, *, timeout: int = config.REQUEST_TIMEOUT_SECONDS) -> requests.Response:
+def get(
+    url: str,
+    *,
+    params: dict | None = None,
+    timeout: int = config.REQUEST_TIMEOUT_SECONDS,
+) -> requests.Response:
     response = requests.get(
         url,
+        params=params,
         headers={"User-Agent": config.USER_AGENT},
         timeout=timeout,
     )

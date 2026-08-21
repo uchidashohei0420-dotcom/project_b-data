@@ -1,14 +1,14 @@
 """Scrapes Amazon.co.jp search results for "あたしンチ".
 
-This is the highest-risk source (bot detection / CAPTCHA, ToS considerations — see
-docs/PLAN.md Context section). It is deliberately the most defensive scraper: a random
-delay before the request, an explicit check for a CAPTCHA/blocked response (raised as a
-SourceError rather than silently returning zero items and looking like "no products
-found"), and it must never take down the rest of the run if it fails.
-
-TODO before first real run: verify selectors against the live search results page, and
-seriously consider replacing this with the Amazon Product Advertising API or dropping it
-entirely if blocking proves persistent (see plan's legal/ToS note).
+**DISABLED — not wired into main.ALL_SOURCES.** This was the highest-risk source (bot
+detection / CAPTCHA, ToS considerations — see docs/PLAN.md Context section) and, in a
+real GitHub Actions run (2026-08-21), returned 0 items without erroring — likely a
+selector mismatch against Amazon's real search-result markup, though it's also
+consistent with a soft bot-detection response that doesn't trip the explicit CAPTCHA
+check below. Rather than keep chasing Amazon's markup/anti-bot changes, goods collection
+was moved to `ec_rakuten.py` (a legitimate free JSON API, no scraping). Left in place in
+case Amazon coverage is wanted later, but re-enabling needs the selectors below verified
+against a live page first.
 """
 from __future__ import annotations
 
