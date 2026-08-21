@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/uchidashohei0420-dotcom/project_b-data/data/schema/feed.schema.json",
+  "title": "Atashinchi Watch feed",
+  "type": "object",
+  "required": ["generated_at", "schema_version", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/feedItem" }
+    }
+  },
+  "$defs": {
+    "feedItem": {
+      "type": "object",
+      "required": [
+        "id", "type", "source_type", "source_name", "title", "url", "collected_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["event", "goods", "news"] },
+        "source_type": { "type": "string", "enum": ["official", "ec", "sns"] },
+        "source_name": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": ["string", "null"] },
+        "url": { "type": "string", "format": "uri" },
+        "image_url": { "type": ["string", "null"], "format": "uri" },
+        "collected_at": { "type": "string", "format": "date-time" },
+
+        "event_datetime": { "type": ["string", "null"], "format": "date-time" },
+        "location": { "type": ["string", "null"] },
+
+        "price_jpy": { "type": ["integer", "null"], "minimum": 0 },
+        "release_date": { "type": ["string", "null"], "format": "date" },
+        "purchase_url": { "type": ["string", "null"], "format": "uri" },
+
+        "raw_snippet": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

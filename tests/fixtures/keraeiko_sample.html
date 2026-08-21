@@ -1,0 +1,23 @@
+<html>
+<body>
+  <ul class="news-list">
+    <li class="news-list__item">
+      <time class="news-item__date">2026.08.20</time>
+      <a href="/news/sample-1">
+        <img src="/img/sample-1.jpg">
+        <span class="news-item__title">サンプルお知らせ1</span>
+      </a>
+    </li>
+    <li class="news-list__item">
+      <time class="news-item__date">2026.08.15</time>
+      <a href="https://keraeiko.com/news/sample-2">
+        <span class="news-item__title">サンプルお知らせ2(画像なし)</span>
+      </a>
+    </li>
+    <!-- a malformed item with no link: must be skipped, not crash the parser -->
+    <li class="news-list__item">
+      <span class="news-item__title">リンクなしのお知らせ(スキップされるべき)</span>
+    </li>
+  </ul>
+</body>
+</html>

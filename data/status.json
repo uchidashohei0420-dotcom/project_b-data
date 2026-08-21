@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-08-21T15:00:00+09:00",
+  "sources": {
+    "official_keraeiko": { "count": 0, "ok": true, "error": null },
+    "official_30th": { "count": 0, "ok": true, "error": null },
+    "ec_loft": { "count": 0, "ok": true, "error": null },
+    "ec_animate": { "count": 0, "ok": true, "error": null },
+    "ec_amazon": { "count": 0, "ok": true, "error": null },
+    "sns_x": { "count": 0, "ok": true, "error": null }
+  }
+}
