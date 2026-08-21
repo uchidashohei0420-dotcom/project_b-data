@@ -20,7 +20,7 @@ from pathlib import Path
 from . import config
 from .dedupe import merge
 from .models import FeedItem, FeedItemDraft, ItemType, SourceType
-from .sources.base import Source, SourceError
+from .sources.base import Source, SourceError, SourceNotConfigured
 from .sources.ec_rakuten import ECRakutenSource
 from .sources.official_keraeiko import OfficialKeraeikoSource
 from .sources.sns_x import SnsXSource
@@ -134,6 +134,13 @@ def run() -> int:
             collected = source.collect()
             drafts.extend(collected)
             status[source.name] = {"count": len(collected), "ok": True, "error": None}
+        except SourceNotConfigured as exc:
+            # Expected/intentional (API key or cookies not set up yet) — recorded like any
+            # other failed source in status.json, but deliberately NOT counted toward the
+            # failure threshold below, so an unconfigured optional source can't perpetually
+            # block every run from committing the sources that *are* working.
+            log.info("%s not configured: %s", source.name, exc)
+            status[source.name] = {"count": 0, "ok": False, "error": str(exc)}
         except SourceError as exc:
             log.warning("%s failed: %s", source.name, exc)
             status[source.name] = {"count": 0, "ok": False, "error": str(exc)}

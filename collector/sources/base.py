@@ -14,6 +14,14 @@ class SourceError(Exception):
     status.json rather than letting it crash the whole run."""
 
 
+class SourceNotConfigured(SourceError):
+    """Raised when a source's required config (API key, cookies) simply isn't set yet.
+    This is expected/intentional, not a fault — main.py records it in status.json like any
+    other SourceError but does NOT count it toward the "too many sources failed" abort
+    threshold, so an optional source awaiting setup can't perpetually block every run from
+    committing the sources that *are* configured."""
+
+
 class Source(ABC):
     #: Key used in data/status.json and for the zero-count regression check in main.py.
     name: str

@@ -25,7 +25,7 @@ import subprocess
 
 from .. import config
 from ..models import FeedItemDraft, ItemType, SourceType
-from .base import Source, SourceError
+from .base import Source, SourceError, SourceNotConfigured
 
 OFFICIAL_HANDLE = "atashinchi_new"
 SEARCH_KEYWORD = "あたしンチ"
@@ -101,9 +101,9 @@ class SnsXSource(Source):
     def collect(self) -> list[FeedItemDraft]:
         credentials = config.twitter_credentials()
         if not credentials:
-            # Not a hard failure: SNS is one of three source categories, and missing
-            # credentials (not yet configured, or expired) shouldn't fail the whole run.
-            raise SourceError(
+            # Not configured yet, not broken — doesn't count toward the run failure
+            # threshold (see SourceNotConfigured).
+            raise SourceNotConfigured(
                 f"{config.TWITTER_AUTH_TOKEN_ENV}/{config.TWITTER_CT0_ENV} not set; skipping SNS collection"
             )
         auth_token, ct0 = credentials

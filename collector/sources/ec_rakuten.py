@@ -19,7 +19,7 @@ from __future__ import annotations
 
 from .. import config, http_util
 from ..models import FeedItemDraft, ItemType, SourceType
-from .base import Source, SourceError
+from .base import Source, SourceError, SourceNotConfigured
 
 SEARCH_URL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601"
 KEYWORD = "あたしンチ"
@@ -66,9 +66,9 @@ class ECRakutenSource(Source):
     def collect(self) -> list[FeedItemDraft]:
         app_id = config.rakuten_app_id()
         if not app_id:
-            # Not a hard failure: like the other optional sources, an unconfigured key
-            # shouldn't fail the whole run.
-            raise SourceError(f"{config.RAKUTEN_APP_ID_ENV} is not set; skipping Rakuten collection")
+            # Not configured yet, not broken — doesn't count toward the run failure
+            # threshold (see SourceNotConfigured).
+            raise SourceNotConfigured(f"{config.RAKUTEN_APP_ID_ENV} is not set; skipping Rakuten collection")
 
         params = {
             "applicationId": app_id,
