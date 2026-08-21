@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-08-21T12:22:10.717389+00:00",
+  "checked_at": "2026-08-21T12:37:19.667979+00:00",
   "sources": {
     "official_keraeiko": {
       "count": 12,
       "ok": true,
       "error": null
     },
-    "ec_amazon": {
+    "ec_rakuten": {
       "count": 0,
-      "ok": true,
-      "error": null
+      "ok": false,
+      "error": "RAKUTEN_APP_ID is not set; skipping Rakuten collection"
     },
     "sns_x": {
       "count": 0,
