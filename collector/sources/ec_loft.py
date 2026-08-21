@@ -1,6 +1,15 @@
 """Scrapes ロフトネットストア search results for "あたしンチ".
 
-TODO before first real run: verify selectors against the live search results page.
+**DISABLED — not wired into main.ALL_SOURCES.** Verified against the live site
+(2026-08-21, via GitHub Actions): the original guessed URL (`/products/search?q=...`)
+404s, and Loft's actual online store (`https://www.loft.co.jp/store/`, linked from the
+homepage as "ネットストア") returns HTTP 503 to a plain `requests` GET — it's behind
+some form of bot/traffic protection that a simple User-Agent doesn't get past. Loft's
+own `/news/` page (corporate press releases, not product listings) *is* scrapable, but
+that's not what this source is for. Re-enabling this needs either a headless browser
+(Playwright) that can pass whatever check is blocking `/store/`, or discovering a
+JSON/API endpoint the storefront's JS calls (would need real browser devtools access to
+find, which this dev environment doesn't have).
 """
 from __future__ import annotations
 

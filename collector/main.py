@@ -22,20 +22,19 @@ from .dedupe import merge
 from .models import FeedItem, FeedItemDraft, ItemType, SourceType
 from .sources.base import Source, SourceError
 from .sources.ec_amazon import ECAmazonSource
-from .sources.ec_animate import ECAnimateSource
-from .sources.ec_loft import ECLoftSource
-from .sources.official_30th import Official30thSource
 from .sources.official_keraeiko import OfficialKeraeikoSource
 from .sources.sns_x import SnsXSource
+
+# ec_animate.ECAnimateSource, ec_loft.ECLoftSource, and official_30th.Official30thSource
+# are deliberately NOT imported/wired in here — verified against the live sites
+# (2026-08-21) to be unreachable via plain `requests` (bot-protection blocks / no real
+# content), see each module's docstring for specifics and what re-enabling would need.
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("collector")
 
 ALL_SOURCES: list[type[Source]] = [
     OfficialKeraeikoSource,
-    Official30thSource,
-    ECLoftSource,
-    ECAnimateSource,
     ECAmazonSource,
     SnsXSource,
 ]

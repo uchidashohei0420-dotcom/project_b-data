@@ -1,6 +1,12 @@
 """Scrapes アニメイト通販 search results for "あたしンチ".
 
-TODO before first real run: verify selectors against the live search results page.
+**DISABLED — not wired into main.ALL_SOURCES.** Verified against the live site
+(2026-08-21, via GitHub Actions): a plain `requests` GET to the homepage gets redirected
+to `tc-animate.techorus-cdn.com/.../overtraffic.html`, a CDN-level traffic/bot-protection
+block page (612 bytes, no real content) — this happens before even reaching the search
+page, so no selector fix can work around it. Re-enabling this needs either a headless
+browser (Playwright) that can get past the CDN check, or a different access path (RSS
+feed, official API) if one exists.
 """
 from __future__ import annotations
 

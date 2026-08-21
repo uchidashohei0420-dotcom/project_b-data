@@ -1,7 +1,13 @@
 """Scrapes あたしンち30周年特設サイト (atashinchi30th-anime.shin-ei-animation.jp) news/events.
 
-TODO before first real run: same caveat as official_keraeiko.py — verify selectors
-against the live page before relying on this in production.
+**DISABLED — not wired into main.ALL_SOURCES.** Verified against the live site
+(2026-08-21, via GitHub Actions): the root page is a near-static single-page landing
+site (~20KB, one `div.particles-js` background effect, no `<nav>`, essentially no
+internal links beyond one external link to publications.asahi.com). There is no
+discoverable news/events listing on this domain to scrape — `/news/` 404s, and the
+homepage itself has no repeating "article" structure. Re-enable only if the site adds a
+real news section, or replace this source with something else entirely (e.g. the site's
+own social links, if any are added later).
 """
 from __future__ import annotations
 

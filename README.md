@@ -2,7 +2,21 @@
 
 「あたしンチ」のイベント・グッズ情報を自動収集する、個人利用アプリ [Atashinchi Watch](https://github.com/uchidashohei0420-dotcom/project_b) のためのデータフィード用リポジトリです。
 
-`.github/workflows/collect.yml` が1日3回(JST 9/15/21時)、公式サイト・EC(ロフト/アニメイト/Amazon)・X(SNS、[Agent Reach](https://github.com/Panniantong/agent-reach)経由)を巡回し、`data/feed.json` を更新・コミットします。iOSアプリはこの`feed.json`を `raw.githubusercontent.com` 経由で取得するだけの薄いクライアントです。
+`.github/workflows/collect.yml` が1日3回(JST 9/15/21時)、各情報源を巡回し、`data/feed.json` を更新・コミットします。iOSアプリはこの`feed.json`を `raw.githubusercontent.com` 経由で取得するだけの薄いクライアントです。
+
+### 現在有効な情報源(`collector/main.py`の`ALL_SOURCES`)
+
+- **けらえいこ公式サイト**(`official_keraeiko.py`): 実サイトで動作確認済み(`/category/topics`)。
+- **Amazon**(`ec_amazon.py`): 動作はするが、bot検知の影響で0件になることがある。継続的にブロックされる場合はAmazon Product Advertising APIへの切り替えを検討。
+- **X/SNS**(`sns_x.py`, [Agent Reach](https://github.com/Panniantong/agent-reach)経由): `TWITTER_AUTH_TOKEN`/`TWITTER_CT0`未設定の間はスキップされる(runは失敗しない)。
+
+### 無効化中の情報源(2026-08-21、実サイト検証済み・簡易スクレイピングでは到達不可と判明)
+
+- **`official_30th.py`**(あたしンち30周年特設サイト): ほぼ静的なランディングページで、ニュース欄自体が存在しない。
+- **`ec_loft.py`**(ロフト): 実際のオンラインストア(`/store/`)がHTTP 503を返す(bot対策と思われる)。
+- **`ec_animate.py`**(アニメイト通販): CDNの「overtraffic」ブロックページにリダイレクトされる。
+
+これら3つを再度有効化するには、Playwright等のヘッドレスブラウザによるbot対策の突破、または別のアクセス経路(公式API・RSS等)の調査が必要です。`collector/main.py`の`ALL_SOURCES`にインポート・追加すれば復活します。
 
 ## このリポジトリが公開である理由
 

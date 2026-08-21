@@ -1,23 +1,49 @@
 <html>
 <body>
-  <ul class="news-list">
-    <li class="news-list__item">
-      <time class="news-item__date">2026.08.20</time>
-      <a href="/news/sample-1">
-        <img src="/img/sample-1.jpg">
-        <span class="news-item__title">サンプルお知らせ1</span>
-      </a>
-    </li>
-    <li class="news-list__item">
-      <time class="news-item__date">2026.08.15</time>
-      <a href="https://keraeiko.com/news/sample-2">
-        <span class="news-item__title">サンプルお知らせ2(画像なし)</span>
-      </a>
-    </li>
-    <!-- a malformed item with no link: must be skipped, not crash the parser -->
-    <li class="news-list__item">
-      <span class="news-item__title">リンクなしのお知らせ(スキップされるべき)</span>
-    </li>
-  </ul>
+  <div class="uk-card uk-grid-collapse" id="post-1688">
+    <div class="uk-card-body uk-padding-remove">
+      <div class="uk-card-media-top">
+        <a href="https://keraeiko.com/1688.html" rel="bookmark">
+          <div class="uk-cover-container">
+            <img alt="" class="uk-img wp-post-image" src="https://keraeiko.com/wp-content/uploads/sample1.jpg" />
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="uk-card-body hentry">
+      <div class="uk-card-text uk-text-justify hentry">
+        <a class="koz-medium uk-text-small" href="https://keraeiko.com/1688.html" rel="bookmark">
+          『あたしンちSUPER』④巻、発売！
+        </a>
+        <div class="uk-card-text">
+          <span class="entry-meta"><span class="meta-date">
+            <time class="entry-date published updated" datetime="2026-03-16T00:03:07+09:00">2026.03.16</time>
+          </span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-card uk-grid-collapse" id="post-1700">
+    <div class="uk-card-body hentry">
+      <div class="uk-card-text uk-text-justify hentry">
+        <a class="koz-medium uk-text-small" href="https://keraeiko.com/1700.html" rel="bookmark">
+          サンプルお知らせ2(画像なし)
+        </a>
+        <div class="uk-card-text">
+          <span class="entry-meta"><span class="meta-date">
+            <time class="entry-date published updated" datetime="2026-08-15T00:00:00+09:00">2026.08.15</time>
+          </span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- a malformed card with no title link: must be skipped, not crash the parser -->
+  <div class="uk-card uk-grid-collapse" id="post-1701">
+    <div class="uk-card-body hentry">
+      <div class="uk-card-text uk-text-justify hentry">
+        <span>リンクなしのお知らせ(スキップされるべき)</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
