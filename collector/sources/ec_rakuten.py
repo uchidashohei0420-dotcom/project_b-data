@@ -90,7 +90,15 @@ class ECRakutenSource(Source):
             "hits": HITS,
         }
         try:
-            response = http_util.get(SEARCH_URL, params=params)
+            # The app is registered on webservice.rakuten.co.jp with "github.com" as its
+            # allowed website (アプリケーションタイプ: Webアプリケーション) — a
+            # server-to-server call sends no Referer by default, which the live API
+            # rejected with a 403 (confirmed via a real workflow_dispatch run,
+            # 2026-08-22). Sending an explicit Referer matching the registered domain
+            # works around that without needing to change the app's registered type.
+            response = http_util.get(
+                SEARCH_URL, params=params, extra_headers={"Referer": "https://github.com/"}
+            )
         except Exception as exc:  # noqa: BLE001 - deliberately broad, isolated per-source
             raise SourceError(f"failed to fetch Rakuten search: {exc}") from exc
 

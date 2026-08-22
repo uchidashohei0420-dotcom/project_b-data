@@ -11,13 +11,12 @@ def get(
     url: str,
     *,
     params: dict | None = None,
+    extra_headers: dict | None = None,
     timeout: int = config.REQUEST_TIMEOUT_SECONDS,
 ) -> requests.Response:
-    response = requests.get(
-        url,
-        params=params,
-        headers={"User-Agent": config.USER_AGENT},
-        timeout=timeout,
-    )
+    headers = {"User-Agent": config.USER_AGENT}
+    if extra_headers:
+        headers.update(extra_headers)
+    response = requests.get(url, params=params, headers=headers, timeout=timeout)
     response.raise_for_status()
     return response
