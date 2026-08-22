@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-22T00:47:05.281317+00:00",
+  "checked_at": "2026-08-22T01:14:05.265104+00:00",
   "sources": {
     "official_keraeiko": {
       "count": 12,
@@ -14,7 +14,7 @@
     "sns_x": {
       "count": 0,
       "ok": false,
-      "error": "TWITTER_AUTH_TOKEN/TWITTER_CT0 not set; skipping SNS collection"
+      "error": "twitter CLI is not installed on PATH (run `agent-reach install`)"
     }
   }
 }
