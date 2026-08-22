@@ -27,13 +27,12 @@ jobs:
 
       - run: pip install -r collector/requirements.txt
 
-      # Installs twitter-cli (the backend agent-reach sets up). Verified against
-      # https://github.com/Panniantong/agent-reach and https://github.com/public-clis/twitter-cli
-      # READMEs (2026-08); not yet exercised in a real Actions run — if this breaks, SNS
-      # collection is skipped for the run (fault-isolated) rather than failing the job.
-      - run: |
-          pip install https://github.com/Panniantong/agent-reach/archive/main.zip
-          agent-reach install --env=auto || echo "::warning::agent-reach install failed; sns_x collection will be skipped this run"
+      # twitter-cli is a standalone PyPI package (not something `agent-reach install`
+      # sets up, despite an earlier assumption) — verified via a real Actions run
+      # (2026-08-22) that plain `pip install twitter-cli` provides the `twitter` binary
+      # used by collector/sources/sns_x.py. If this breaks, SNS collection is
+      # fault-isolated and skipped for the run rather than failing the whole job.
+      - run: pip install twitter-cli || echo "::warning::twitter-cli install failed; sns_x collection will be skipped this run"
 
       - run: python -m collector.main
         env:

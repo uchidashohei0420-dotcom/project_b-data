@@ -1,16 +1,27 @@
 {
-  "posts": [
+  "ok": true,
+  "schema_version": "1",
+  "data": [
     {
+      "id": "1000000000000000001",
       "text": "9月にトークイベントを開催します！詳細は近日公開。",
-      "url": "https://x.com/atashinchi_new/status/1000000000000000001"
+      "author": { "screenName": "atashinchi_new", "name": "あたしンち／けらえいこ公式" },
+      "isRetweet": false,
+      "retweetedBy": null
     },
     {
+      "id": "1000000000000000002",
       "text": "新しいグッズが発売決定！お楽しみに。",
-      "url": "https://x.com/atashinchi_new/status/1000000000000000002"
+      "author": { "screenName": "atashinchi_new", "name": "あたしンち／けらえいこ公式" },
+      "isRetweet": false,
+      "retweetedBy": null
     },
     {
+      "id": "1000000000000000003",
       "text": "今日は良い天気ですね。",
-      "url": "https://x.com/atashinchi_new/status/1000000000000000003"
+      "author": { "screenName": "atashinchi_new", "name": "あたしンち／けらえいこ公式" },
+      "isRetweet": false,
+      "retweetedBy": null
     }
   ]
 }
