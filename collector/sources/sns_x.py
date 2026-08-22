@@ -27,6 +27,7 @@ workflow) using real throwaway-account cookies:
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 
 from .. import config
@@ -55,10 +56,16 @@ def _classify(text: str) -> ItemType:
 
 
 def _run_twitter_cli(args: list[str], *, auth_token: str, ct0: str) -> list[dict]:
+    # env=... replaces the child's entire environment rather than extending it, so this
+    # must start from a copy of the current environment (PATH included) — passing just
+    # the two auth vars here previously wiped PATH and made every call fail with
+    # FileNotFoundError even though `twitter` was correctly installed (root-caused via a
+    # real Actions run, 2026-08-22).
+    env = {**os.environ, "TWITTER_AUTH_TOKEN": auth_token, "TWITTER_CT0": ct0}
     try:
         result = subprocess.run(
             args,
-            env={"TWITTER_AUTH_TOKEN": auth_token, "TWITTER_CT0": ct0},
+            env=env,
             capture_output=True,
             text=True,
             timeout=60,
@@ -69,7 +76,7 @@ def _run_twitter_cli(args: list[str], *, auth_token: str, ct0: str) -> list[dict
     except subprocess.TimeoutExpired as exc:
         raise SourceError(f"twitter-cli timed out: {' '.join(args)}") from exc
     except FileNotFoundError as exc:
-        raise SourceError("twitter CLI is not installed on PATH (run `agent-reach install`)") from exc
+        raise SourceError("twitter CLI is not installed on PATH (run `pip install twitter-cli`)") from exc
 
     try:
         parsed = json.loads(result.stdout)
