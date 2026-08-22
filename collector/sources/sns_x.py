@@ -23,6 +23,13 @@ workflow) using real throwaway-account cookies:
   resolve itself on a future twitter-cli release, `collect()` below fault-isolates the
   search sub-collection from the timeline one: a broken search must not discard a
   successfully-collected timeline.
+
+Fixed 2026-08-22 (user-reported): every timeline post used to get a hardcoded
+`source_name` of `"@atashinchi_new"` regardless of authorship, even though the permalink
+already correctly points at the original author for a retweet — so a retweeted fan's post
+displayed as if the official account had written it. `_source_name_for` below now credits
+the real `author.screenName`, noting when a post reached us via a retweet or (once the
+search bug above is fixed upstream) via keyword search.
 """
 from __future__ import annotations
 
@@ -93,7 +100,17 @@ def _run_twitter_cli(args: list[str], *, auth_token: str, ct0: str) -> list[dict
     return parsed
 
 
-def _draft_from_post(post: dict, *, source_name: str) -> FeedItemDraft | None:
+def _source_name_for(post: dict, screen_name: str, *, via_search: bool) -> str:
+    if screen_name == OFFICIAL_HANDLE:
+        return f"@{OFFICIAL_HANDLE}"
+    if post.get("isRetweet"):
+        return f"@{screen_name}(@{OFFICIAL_HANDLE}がRT)"
+    if via_search:
+        return f"@{screen_name}(X検索: {SEARCH_KEYWORD})"
+    return f"@{screen_name}"
+
+
+def _draft_from_post(post: dict, *, via_search: bool) -> FeedItemDraft | None:
     text = post.get("text")
     author = post.get("author") or {}
     screen_name = author.get("screenName")
@@ -105,7 +122,7 @@ def _draft_from_post(post: dict, *, source_name: str) -> FeedItemDraft | None:
     return FeedItemDraft(
         type=_classify(text),
         source_type=SourceType.SNS,
-        source_name=source_name,
+        source_name=_source_name_for(post, screen_name, via_search=via_search),
         title=text[:80],
         url=url,
         raw_snippet=text,
@@ -129,7 +146,7 @@ class SnsXSource(Source):
 
         timeline_posts = _run_twitter_cli(_TIMELINE_ARGS, auth_token=auth_token, ct0=ct0)
         for post in timeline_posts:
-            draft = _draft_from_post(post, source_name=f"@{OFFICIAL_HANDLE}")
+            draft = _draft_from_post(post, via_search=False)
             if draft:
                 items.append(draft)
 
@@ -141,7 +158,7 @@ class SnsXSource(Source):
         except SourceError:
             search_posts = []
         for post in search_posts:
-            draft = _draft_from_post(post, source_name=f"X検索: {SEARCH_KEYWORD}")
+            draft = _draft_from_post(post, via_search=True)
             if draft:
                 items.append(draft)
 
