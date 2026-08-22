@@ -30,14 +30,22 @@ already correctly points at the original author for a retweet — so a retweeted
 displayed as if the official account had written it. `_source_name_for` below now credits
 the real `author.screenName`, noting when a post reached us via a retweet or (once the
 search bug above is fixed upstream) via keyword search.
+
+event_datetime/location extraction (event_extraction.py, see docs/PLAN.md §16 Phase 6) is
+applied to posts classified as event. The real twitter-cli post shape (see verification
+notes above) has no per-post timestamp field, so unlike official_keraeiko.py there's no
+per-item date to anchor "M月D日" against — the collection run's own current year is used
+instead (see `_REFERENCE_YEAR` below).
 """
 from __future__ import annotations
 
 import json
 import os
 import subprocess
+from datetime import datetime
 
 from .. import config
+from ..event_extraction import extract_event_datetime, extract_location
 from ..models import FeedItemDraft, ItemType, SourceType
 from .base import Source, SourceError, SourceNotConfigured
 
@@ -119,13 +127,24 @@ def _draft_from_post(post: dict, *, via_search: bool) -> FeedItemDraft | None:
         return None
     url = f"https://x.com/{screen_name}/status/{post_id}"
 
+    item_type = _classify(text)
+    event_datetime = None
+    location = None
+    if item_type == ItemType.EVENT:
+        # No per-post timestamp field is available (see module docstring) — the run's
+        # current year is the only anchor we have for "M月D日" wording.
+        event_datetime = extract_event_datetime(text, reference_year=datetime.now().year)
+        location = extract_location(text)
+
     return FeedItemDraft(
-        type=_classify(text),
+        type=item_type,
         source_type=SourceType.SNS,
         source_name=_source_name_for(post, screen_name, via_search=via_search),
         title=text[:80],
         url=url,
         raw_snippet=text,
+        event_datetime=event_datetime,
+        location=location,
     )
 
 

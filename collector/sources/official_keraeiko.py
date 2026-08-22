@@ -21,12 +21,23 @@ inside Actions). Confirmed real structure (WordPress + UIkit theme):
     </div>
 
 Note: the original guess (`/news/`) 404'd — the real listing lives at `/category/topics`.
+
+Fixed 2026-08-22: every item used to be hardcoded to `type=ItemType.NEWS`, unlike sns_x.py
+which already classifies event/goods by keyword. `_classify` below brings this source in
+line (deliberately a separate copy of the keyword lists rather than importing sns_x.py's —
+the two sources' text characteristics differ enough, e.g. site copy vs. tweet text, that
+sharing risks silently diverging in surprising ways; revisit sharing once both have been
+stable for a while). event_datetime/location extraction (event_extraction.py) is applied
+only to items classified as event, matching sns_x.py's treatment.
 """
 from __future__ import annotations
+
+from datetime import datetime
 
 from bs4 import BeautifulSoup
 
 from .. import http_util
+from ..event_extraction import extract_event_datetime, extract_location
 from ..models import FeedItemDraft, ItemType, SourceType
 from .base import Source, SourceError
 
@@ -36,6 +47,30 @@ LISTING_ITEM_SELECTOR = "div.uk-card.uk-grid-collapse"
 TITLE_LINK_SELECTOR = "a.koz-medium"
 DATE_SELECTOR = "time.entry-date"
 IMAGE_SELECTOR = "img.wp-post-image"
+
+# Same rationale as sns_x.py's _EVENT_KEYWORDS/_GOODS_KEYWORDS: narrow on purpose to keep
+# false positives low.
+_EVENT_KEYWORDS = ("イベント", "開催", "トークショー", "サイン会", "フェア")
+_GOODS_KEYWORDS = ("グッズ", "発売", "予約", "コラボ商品")
+
+
+def _classify(text: str) -> ItemType:
+    if any(keyword in text for keyword in _EVENT_KEYWORDS):
+        return ItemType.EVENT
+    if any(keyword in text for keyword in _GOODS_KEYWORDS):
+        return ItemType.GOODS
+    return ItemType.NEWS
+
+
+def _reference_year(posted_date: str | None) -> int:
+    """The listing's own posted date anchors which year "M月D日" refers to; falls back to
+    the current year if the date is missing or unparseable rather than failing collection."""
+    if posted_date:
+        try:
+            return datetime.fromisoformat(posted_date).year
+        except ValueError:
+            pass
+    return datetime.now().year
 
 
 class OfficialKeraeikoSource(Source):
@@ -65,15 +100,25 @@ class OfficialKeraeikoSource(Source):
             date_el = node.select_one(DATE_SELECTOR)
             posted_date = date_el.get("datetime") if date_el else None
 
+            item_type = _classify(title)
+            event_datetime = None
+            location = None
+            if item_type == ItemType.EVENT:
+                reference_year = _reference_year(posted_date)
+                event_datetime = extract_event_datetime(title, reference_year=reference_year)
+                location = extract_location(title)
+
             items.append(
                 FeedItemDraft(
-                    type=ItemType.NEWS,
+                    type=item_type,
                     source_type=SourceType.OFFICIAL,
                     source_name="けらえいこ公式サイト",
                     title=title,
                     url=url,
                     image_url=image_url,
                     description=posted_date,
+                    event_datetime=event_datetime,
+                    location=location,
                 )
             )
 

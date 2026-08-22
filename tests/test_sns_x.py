@@ -101,3 +101,49 @@ def test_retweet_credits_original_author_not_official_handle(monkeypatch):
     assert len(items) == 1
     assert items[0].source_name == f"@a_fan_account(@{sns_x.OFFICIAL_HANDLE}がRT)"
     assert items[0].url == "https://x.com/a_fan_account/status/9000000000000000001"
+
+
+def test_event_post_gets_datetime_and_location_extracted(monkeypatch):
+    _set_credentials(monkeypatch)
+    timeline_payload = json.dumps(
+        {
+            "ok": True,
+            "schema_version": "1",
+            "data": [
+                {
+                    "id": "9000000000000000002",
+                    "text": "9月15日18時30分よりトークイベント開催、会場:渋谷ロフト9",
+                    "author": {"screenName": sns_x.OFFICIAL_HANDLE, "name": "あたしンち／けらえいこ公式"},
+                    "isRetweet": False,
+                    "retweetedBy": None,
+                }
+            ],
+        }
+    )
+    empty_search_payload = json.dumps({"ok": False, "error": {"code": "not_found"}})
+
+    with patch.object(
+        sns_x.subprocess,
+        "run",
+        side_effect=[
+            _fake_completed_process(timeline_payload),
+            _fake_completed_process(empty_search_payload),
+        ],
+    ), patch.object(sns_x, "datetime") as mock_datetime:
+        mock_datetime.now.return_value.year = 2026
+        items = sns_x.SnsXSource().collect()
+
+    assert len(items) == 1
+    assert items[0].type.value == "event"
+    assert items[0].event_datetime == "2026-09-15T18:30:00+09:00"
+    assert items[0].location == "渋谷ロフト9"
+
+
+def test_non_event_post_leaves_datetime_and_location_unset(monkeypatch):
+    _set_credentials(monkeypatch)
+    fixture_json = FIXTURE.read_text(encoding="utf-8")
+
+    with patch.object(sns_x.subprocess, "run", return_value=_fake_completed_process(fixture_json)):
+        items = sns_x.SnsXSource().collect()
+
+    assert all(item.event_datetime is None and item.location is None for item in items)
