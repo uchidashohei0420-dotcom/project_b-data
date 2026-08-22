@@ -11,7 +11,14 @@ from __future__ import annotations
 import re
 from datetime import datetime
 
-_DATE_RE = re.compile(r"(\d{1,2})月(\d{1,2})日")
+_DATE_KANJI_RE = re.compile(r"(\d{1,2})月(\d{1,2})日")
+# Real posts favor "8/21" / "〜8/21まで" over the kanji form. The lookarounds keep this from
+# matching a piece of a longer numeric run — a product code, or the month/day half of a
+# year-qualified date like "2026/08/21" (the `(?<!\d{4}/)` lookbehind rejects that specific
+# case explicitly; plain `(?<!\d)`/`(?!\d)` alone would still match "08/21" out of it, since
+# the leading "/" breaks the digit run). Full year-qualified dates stay out of scope entirely,
+# same "don't guess" principle as below.
+_DATE_SLASH_RE = re.compile(r"(?<!\d{4}/)(?<!\d)(\d{1,2})/(\d{1,2})(?!\d)")
 _TIME_RE = re.compile(r"(\d{1,2})[:時](\d{2})分?")
 
 # Explicit labels only — no free-form place-name recognition (far too easy to produce a
@@ -34,7 +41,7 @@ def extract_event_datetime(text: str, *, reference_year: int) -> str | None:
     "1月" post found in December, referring to next year) — a known, accepted limitation
     rather than a guess.
     """
-    date_match = _DATE_RE.search(text)
+    date_match = _DATE_KANJI_RE.search(text) or _DATE_SLASH_RE.search(text)
     time_match = _TIME_RE.search(text)
     if not date_match or not time_match:
         return None

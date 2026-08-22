@@ -139,6 +139,43 @@ def test_event_post_gets_datetime_and_location_extracted(monkeypatch):
     assert items[0].location == "渋谷ロフト9"
 
 
+def test_event_post_with_slash_date_gets_datetime_extracted(monkeypatch):
+    # Real production posts favor "8/21" over the kanji "8月21日" form (found via a live
+    # workflow_dispatch run, 2026-08-22) — this is a regression test for that gap.
+    _set_credentials(monkeypatch)
+    timeline_payload = json.dumps(
+        {
+            "ok": True,
+            "schema_version": "1",
+            "data": [
+                {
+                    "id": "9000000000000000003",
+                    "text": "帰ってきた！あたしンちフェア in KIDDY LAND　8/21 18:00まで開催",
+                    "author": {"screenName": sns_x.OFFICIAL_HANDLE, "name": "あたしンち／けらえいこ公式"},
+                    "isRetweet": False,
+                    "retweetedBy": None,
+                }
+            ],
+        }
+    )
+    empty_search_payload = json.dumps({"ok": False, "error": {"code": "not_found"}})
+
+    with patch.object(
+        sns_x.subprocess,
+        "run",
+        side_effect=[
+            _fake_completed_process(timeline_payload),
+            _fake_completed_process(empty_search_payload),
+        ],
+    ), patch.object(sns_x, "datetime") as mock_datetime:
+        mock_datetime.now.return_value.year = 2026
+        items = sns_x.SnsXSource().collect()
+
+    assert len(items) == 1
+    assert items[0].type.value == "event"
+    assert items[0].event_datetime == "2026-08-21T18:00:00+09:00"
+
+
 def test_non_event_post_leaves_datetime_and_location_unset(monkeypatch):
     _set_credentials(monkeypatch)
     fixture_json = FIXTURE.read_text(encoding="utf-8")

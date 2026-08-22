@@ -35,6 +35,30 @@ def test_returns_none_when_neither_date_nor_time_present():
     assert extract_event_datetime("トークイベント開催決定！詳細は近日公開", reference_year=2026) is None
 
 
+def test_extracts_datetime_with_slash_date_format():
+    assert (
+        extract_event_datetime("8/21 18時30分よりトークイベント開催", reference_year=2026)
+        == "2026-08-21T18:30:00+09:00"
+    )
+
+
+def test_extracts_datetime_with_slash_date_surrounded_by_decoration():
+    assert (
+        extract_event_datetime("帰ってきた！あたしンちフェア〜8/21 12:00開始まで", reference_year=2026)
+        == "2026-08-21T12:00:00+09:00"
+    )
+
+
+def test_returns_none_for_slash_date_with_no_time():
+    assert extract_event_datetime("帰ってきた！あたしンちフェア〜8/21まで", reference_year=2026) is None
+
+
+def test_does_not_extract_slash_date_from_year_qualified_date():
+    # "2026/08/21" must not be misread as month=08/day=21 — full year-qualified dates stay
+    # out of scope entirely (see event_extraction.py's docstring on _DATE_SLASH_RE).
+    assert extract_event_datetime("開催日: 2026/08/21 18時30分", reference_year=2026) is None
+
+
 def test_extracts_location_from_label():
     assert extract_location("トークイベント開催、会場:渋谷ロフト9") == "渋谷ロフト9"
 
