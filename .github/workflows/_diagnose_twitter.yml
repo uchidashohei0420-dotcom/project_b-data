@@ -24,8 +24,20 @@ jobs:
           TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
           TWITTER_CT0: ${{ secrets.TWITTER_CT0 }}
         run: |
-          echo "--- twitter user-posts atashinchi_new --json (first 1500 chars) ---"
-          twitter user-posts atashinchi_new --json 2>&1 | head -c 1500 || true
+          echo "--- twitter user-posts atashinchi_new --json (first 3000 chars, full item) ---"
+          twitter user-posts atashinchi_new --json 2>&1 | head -c 3000 || true
           echo
-          echo "--- twitter search あたしンち --json (first 1500 chars) ---"
-          twitter search "あたしンち" --json 2>&1 | head -c 1500 || true
+          echo "--- twitter search --help ---"
+          twitter search --help 2>&1 || true
+          echo
+          echo "--- twitter search あたしンち (no --json, verbose) ---"
+          twitter search "あたしンち" -v 2>&1 | head -c 2000 || true
+          echo
+          echo "--- twitter search atashinchi (ascii keyword) --json ---"
+          twitter search "atashinchi" --json 2>&1 | head -c 1000 || true
+
+      - name: Inspect installed twitter-cli source for the search command
+        run: |
+          PKG_DIR=$(python3 -c "import twitter_cli, os; print(os.path.dirname(twitter_cli.__file__))")
+          echo "package dir: $PKG_DIR"
+          grep -rn "def search\|search_tweets\|SearchTimeline\|/search" "$PKG_DIR" | head -50
