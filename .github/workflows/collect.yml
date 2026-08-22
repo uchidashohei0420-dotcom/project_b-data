@@ -34,6 +34,13 @@ jobs:
       # fault-isolated and skipped for the run rather than failing the whole job.
       - run: pip install twitter-cli || echo "::warning::twitter-cli install failed; sns_x collection will be skipped this run"
 
+      - name: _debug PATH and twitter binary location (temporary)
+        run: |
+          echo "PATH=$PATH"
+          which twitter || echo "twitter not found by which"
+          python3 -c "import twitter_cli, os; print('module at', twitter_cli.__file__)"
+          find / -xdev -name "twitter" -type f 2>/dev/null | head -20
+
       - run: python -m collector.main
         env:
           TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
