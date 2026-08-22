@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-21T12:37:19.667979+00:00",
+  "checked_at": "2026-08-22T00:18:11.221687+00:00",
   "sources": {
     "official_keraeiko": {
       "count": 12,
@@ -9,7 +9,7 @@
     "ec_rakuten": {
       "count": 0,
       "ok": false,
-      "error": "RAKUTEN_APP_ID is not set; skipping Rakuten collection"
+      "error": "failed to fetch Rakuten search: 400 Client Error: 400 for url: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?applicationId=ea6a0751-2f9a-4552-bec1-e92701763ea7&keyword=%E3%81%82%E3%81%9F%E3%81%97%E3%83%B3%E3%83%81&hits=30&formatVersion=2"
     },
     "sns_x": {
       "count": 0,
