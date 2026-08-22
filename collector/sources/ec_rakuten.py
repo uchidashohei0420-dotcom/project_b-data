@@ -1,19 +1,26 @@
-"""Queries Rakuten Ichiba's Item Search API for "あたしンチ" goods.
+"""Queries Rakuten Ichiba's Item Search API for "あたしンち" goods.
 
 Public JSON API (https://webservice.rakuten.co.jp/), endpoint:
-https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601
+https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701
 
 Chosen to replace ec_amazon/ec_loft/ec_animate: no HTML scraping, no CSS selectors to
 maintain, and no bot-detection surface — the API is meant to be called programmatically.
-Requires a free application ID (self-service signup at the URL above), supplied via the
-RAKUTEN_APP_ID environment variable / GitHub Actions secret.
+Requires a free application ID + access key (self-service signup at the URL above),
+supplied via the RAKUTEN_APP_ID / RAKUTEN_ACCESS_KEY environment variables / GitHub
+Actions secrets.
 
-TODO before first real run: this dev sandbox has no general internet egress
-(webservice.rakuten.co.jp is not reachable from here — same constraint documented in
-official_keraeiko.py etc.), so the request/response shape below is written from
-documented API behavior (formatVersion=2 response shape), not verified against a live
-call. Verify via a throwaway GitHub Actions run once RAKUTEN_APP_ID is available, and
-adjust field names here if the real response differs.
+Verified against a live call via Rakuten's own "APIテストフォーム" test tool on
+webservice.rakuten.co.jp (2026-08-22), after the endpoint originally used here
+(https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601, applicationId only)
+returned {"error": "wrong_parameter", "error_description": "specify valid applicationId"}
+for a freshly-issued applicationId. The domain, path, API version, and required params
+all changed:
+- domain: openapi.rakuten.co.jp (not app.rakuten.co.jp)
+- path/version: /ichibams/api/IchibaItem/Search/20260701 (not /services/api/.../20220601)
+- both applicationId (UUID-shaped now, not the old numeric form) AND accessKey are
+  required together — applicationId alone is rejected
+- format=json (not formatVersion=2); the response nests each item under "Item", the
+  same shape formatVersion=1 used to produce, which _draft_from_item already unwraps
 """
 from __future__ import annotations
 
@@ -21,8 +28,8 @@ from .. import config, http_util
 from ..models import FeedItemDraft, ItemType, SourceType
 from .base import Source, SourceError, SourceNotConfigured
 
-SEARCH_URL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601"
-KEYWORD = "あたしンチ"
+SEARCH_URL = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701"
+KEYWORD = "あたしンち"
 HITS = 30
 
 
@@ -35,7 +42,8 @@ def _extract_image_url(item: dict) -> str | None:
 
 
 def _draft_from_item(raw: dict) -> FeedItemDraft | None:
-    # formatVersion=2 gives flat item dicts; formatVersion=1 wraps each under "Item".
+    # The live API nests each item under "Item" (confirmed 2026-08-22); handle a flat
+    # dict too in case a future formatVersion=2-style response is ever returned instead.
     item = raw.get("Item", raw) if "Item" in raw else raw
     title = item.get("itemName")
     url = item.get("itemUrl")
@@ -64,17 +72,22 @@ class ECRakutenSource(Source):
     name = "ec_rakuten"
 
     def collect(self) -> list[FeedItemDraft]:
-        app_id = config.rakuten_app_id()
-        if not app_id:
+        credentials = config.rakuten_credentials()
+        if not credentials:
             # Not configured yet, not broken — doesn't count toward the run failure
             # threshold (see SourceNotConfigured).
-            raise SourceNotConfigured(f"{config.RAKUTEN_APP_ID_ENV} is not set; skipping Rakuten collection")
+            raise SourceNotConfigured(
+                f"{config.RAKUTEN_APP_ID_ENV}/{config.RAKUTEN_ACCESS_KEY_ENV} not set; skipping Rakuten collection"
+            )
+        app_id, access_key = credentials
 
         params = {
+            "format": "json",
             "applicationId": app_id,
+            "accessKey": access_key,
             "keyword": KEYWORD,
+            "genreId": 0,
             "hits": HITS,
-            "formatVersion": 2,
         }
         try:
             response = http_util.get(SEARCH_URL, params=params)

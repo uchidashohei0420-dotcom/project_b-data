@@ -35,10 +35,20 @@ def twitter_credentials() -> tuple[str, str] | None:
     return None
 
 
-# Rakuten Web Service application ID (free, self-service at https://webservice.rakuten.co.jp/).
-# Not a high-sensitivity secret, but rate-limited per key, so kept out of the repo anyway.
+# Rakuten Web Service credentials (free, self-service at https://webservice.rakuten.co.jp/).
+# Not high-sensitivity secrets, but rate-limited per key, so kept out of the repo anyway.
+# As of the 2026-08-22 API generation, both are required together — applicationId alone
+# (the old, pre-2026 behavior) now fails with "wrong_parameter" / "specify valid
+# applicationId", confirmed via the live API test form on webservice.rakuten.co.jp.
 RAKUTEN_APP_ID_ENV = "RAKUTEN_APP_ID"
+RAKUTEN_ACCESS_KEY_ENV = "RAKUTEN_ACCESS_KEY"
 
 
-def rakuten_app_id() -> str | None:
-    return os.environ.get(RAKUTEN_APP_ID_ENV) or None
+def rakuten_credentials() -> tuple[str, str] | None:
+    """Returns (application_id, access_key) if both are set, else None. Both-or-nothing,
+    same reasoning as twitter_credentials(): a partial pair fails auth anyway."""
+    app_id = os.environ.get(RAKUTEN_APP_ID_ENV)
+    access_key = os.environ.get(RAKUTEN_ACCESS_KEY_ENV)
+    if app_id and access_key:
+        return app_id, access_key
+    return None

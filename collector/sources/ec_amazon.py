@@ -1,4 +1,4 @@
-"""Scrapes Amazon.co.jp search results for "あたしンチ".
+"""Scrapes Amazon.co.jp search results for "あたしンち".
 
 **DISABLED — not wired into main.ALL_SOURCES.** This was the highest-risk source (bot
 detection / CAPTCHA, ToS considerations — see docs/PLAN.md Context section) and, in a

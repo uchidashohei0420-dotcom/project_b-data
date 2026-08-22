@@ -1,6 +1,6 @@
 """Collects from X (Twitter) via twitter-cli (https://github.com/public-clis/twitter-cli),
 the backend that `agent-reach install` sets up: (1) the official account's recent
-timeline, (2) a keyword search for "あたしンチ".
+timeline, (2) a keyword search for "あたしンち".
 
 Ambiguous posts (neither a clear event announcement nor a clear goods announcement) are
 classified as `news` rather than forced into event/goods — see docs/PLAN.md's schema
@@ -28,7 +28,7 @@ from ..models import FeedItemDraft, ItemType, SourceType
 from .base import Source, SourceError, SourceNotConfigured
 
 OFFICIAL_HANDLE = "atashinchi_new"
-SEARCH_KEYWORD = "あたしンチ"
+SEARCH_KEYWORD = "あたしンち"
 
 _TIMELINE_ARGS = ["twitter", "user-posts", OFFICIAL_HANDLE, "--json"]
 _SEARCH_ARGS = ["twitter", "search", SEARCH_KEYWORD, "--json"]

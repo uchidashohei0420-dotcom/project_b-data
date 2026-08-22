@@ -1,4 +1,4 @@
-"""Scrapes ロフトネットストア search results for "あたしンチ".
+"""Scrapes ロフトネットストア search results for "あたしンち".
 
 **DISABLED — not wired into main.ALL_SOURCES.** Verified against the live site
 (2026-08-21, via GitHub Actions): the original guessed URL (`/products/search?q=...`)

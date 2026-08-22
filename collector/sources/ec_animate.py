@@ -1,4 +1,4 @@
-"""Scrapes アニメイト通販 search results for "あたしンチ".
+"""Scrapes アニメイト通販 search results for "あたしンち".
 
 **DISABLED — not wired into main.ALL_SOURCES.** Verified against the live site
 (2026-08-21, via GitHub Actions): a plain `requests` GET to the homepage gets redirected

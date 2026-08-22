@@ -1,13 +1,13 @@
 # project_b-data
 
-「あたしンチ」のイベント・グッズ情報を自動収集する、個人利用アプリ [Atashinchi Watch](https://github.com/uchidashohei0420-dotcom/project_b) のためのデータフィード用リポジトリです。
+「あたしンち」のイベント・グッズ情報を自動収集する、個人利用アプリ [Atashinchi Watch](https://github.com/uchidashohei0420-dotcom/project_b) のためのデータフィード用リポジトリです。
 
 `.github/workflows/collect.yml` が1日3回(JST 9/15/21時)、各情報源を巡回し、`data/feed.json` を更新・コミットします。iOSアプリはこの`feed.json`を `raw.githubusercontent.com` 経由で取得するだけの薄いクライアントです。
 
 ### 現在有効な情報源(`collector/main.py`の`ALL_SOURCES`)
 
 - **けらえいこ公式サイト**(`official_keraeiko.py`): 実サイトで動作確認済み(`/category/topics`)。
-- **楽天市場 商品検索API**(`ec_rakuten.py`): 「あたしンチ」グッズを扱う楽天市場の出店者を横断検索する公式JSON API。HTMLスクレイピングではないためbot検知・マークアップ変化に強い。`RAKUTEN_APP_ID`(無料・自己発行)が必要。
+- **楽天市場 商品検索API**(`ec_rakuten.py`): 「あたしンち」グッズを扱う楽天市場の出店者を横断検索する公式JSON API。HTMLスクレイピングではないためbot検知・マークアップ変化に強い。`RAKUTEN_APP_ID`(無料・自己発行)が必要。
 - **X/SNS**(`sns_x.py`, [Agent Reach](https://github.com/Panniantong/agent-reach)経由): `TWITTER_AUTH_TOKEN`/`TWITTER_CT0`未設定の間はスキップされる(runは失敗しない)。
 
 ### 無効化中の情報源(2026-08-21、実サイト検証済み・簡易スクレイピングでは到達不可と判明)

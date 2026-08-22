@@ -25,6 +25,7 @@ def _load_fixture() -> dict:
 
 def test_parses_items_coerces_string_price_and_skips_urlless_item(monkeypatch):
     monkeypatch.setenv("RAKUTEN_APP_ID", "dummy-app-id")
+    monkeypatch.setenv("RAKUTEN_ACCESS_KEY", "dummy-access-key")
 
     with patch.object(ec_rakuten.http_util, "get", return_value=_FakeResponse(_load_fixture())):
         items = ec_rakuten.ECRakutenSource().collect()
@@ -41,6 +42,19 @@ def test_parses_items_coerces_string_price_and_skips_urlless_item(monkeypatch):
 
 def test_missing_app_id_raises_source_error_without_calling_http(monkeypatch):
     monkeypatch.delenv("RAKUTEN_APP_ID", raising=False)
+    monkeypatch.delenv("RAKUTEN_ACCESS_KEY", raising=False)
+
+    with patch.object(ec_rakuten.http_util, "get") as mock_get:
+        with pytest.raises(SourceError):
+            ec_rakuten.ECRakutenSource().collect()
+        mock_get.assert_not_called()
+
+
+def test_missing_access_key_alone_raises_source_error(monkeypatch):
+    """applicationId alone is exactly the combination the live API rejects with
+    "specify valid applicationId" — both must be set together."""
+    monkeypatch.setenv("RAKUTEN_APP_ID", "dummy-app-id")
+    monkeypatch.delenv("RAKUTEN_ACCESS_KEY", raising=False)
 
     with patch.object(ec_rakuten.http_util, "get") as mock_get:
         with pytest.raises(SourceError):
@@ -50,6 +64,7 @@ def test_missing_app_id_raises_source_error_without_calling_http(monkeypatch):
 
 def test_api_error_response_raises_source_error(monkeypatch):
     monkeypatch.setenv("RAKUTEN_APP_ID", "dummy-app-id")
+    monkeypatch.setenv("RAKUTEN_ACCESS_KEY", "dummy-access-key")
     error_payload = {"error": "wrong_parameter", "error_description": "applicationId is invalid"}
 
     with patch.object(ec_rakuten.http_util, "get", return_value=_FakeResponse(error_payload)):
