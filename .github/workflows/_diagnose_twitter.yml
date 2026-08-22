@@ -5,30 +5,27 @@ jobs:
   diagnose:
     runs-on: ubuntu-latest
     steps:
-      - run: pip install https://github.com/Panniantong/agent-reach/archive/main.zip
-
-      - name: Inspect agent-reach CLI surface
+      - name: Fetch the auth section of twitter-cli's README
         run: |
-          echo "--- agent-reach --help ---"
-          agent-reach --help || true
-          echo "--- agent-reach install --help ---"
-          agent-reach install --help || true
+          curl -sL https://raw.githubusercontent.com/public-clis/twitter-cli/main/README.md > /tmp/readme.md
+          echo "--- lines mentioning TOKEN/ct0/env/AUTH (with context) ---"
+          grep -n -i -B2 -A6 "auth_token\|TWITTER_AUTH\|TWITTER_CT0\|environment variable" /tmp/readme.md || true
 
-      - name: Look for a twitter-specific subcommand or install path
-        run: |
-          echo "--- searching installed agent-reach package for 'twitter' ---"
-          python3 -c "import agent_reach, os; print(os.path.dirname(agent_reach.__file__))" || true
-          PKG_DIR=$(python3 -c "import agent_reach, os; print(os.path.dirname(agent_reach.__file__))" 2>/dev/null)
-          if [ -n "$PKG_DIR" ]; then
-            grep -rli "twitter" "$PKG_DIR" | head -20 || true
-          fi
+      - name: Install twitter-cli directly via pip
+        run: pip install twitter-cli
 
-      - name: Check whether `twitter` CLI exists under any name already
+      - name: Show installed command and version
         run: |
-          which twitter || echo "no 'twitter' on PATH"
-          which twitter-cli || echo "no 'twitter-cli' on PATH"
-          pip show twitter-cli 2>&1 || echo "not a pip package named twitter-cli"
+          which twitter
+          twitter --version || twitter version || true
 
-      - name: Fetch the real public-clis/twitter-cli README for install instructions
+      - name: Real call against our actual account (env-var auth)
+        env:
+          TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
+          TWITTER_CT0: ${{ secrets.TWITTER_CT0 }}
         run: |
-          curl -sL https://raw.githubusercontent.com/public-clis/twitter-cli/main/README.md | head -150
+          echo "--- twitter user-posts atashinchi_new --json (first 1500 chars) ---"
+          twitter user-posts atashinchi_new --json 2>&1 | head -c 1500 || true
+          echo
+          echo "--- twitter search あたしンち --json (first 1500 chars) ---"
+          twitter search "あたしンち" --json 2>&1 | head -c 1500 || true
