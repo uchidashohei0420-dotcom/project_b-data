@@ -91,13 +91,16 @@ class ECRakutenSource(Source):
         }
         try:
             # The app is registered on webservice.rakuten.co.jp with "github.com" as its
-            # allowed website (アプリケーションタイプ: Webアプリケーション) — a
-            # server-to-server call sends no Referer by default, which the live API
-            # rejected with a 403 (confirmed via a real workflow_dispatch run,
-            # 2026-08-22). Sending an explicit Referer matching the registered domain
-            # works around that without needing to change the app's registered type.
+            # allowed website (アプリケーションタイプ: Webアプリケーション). A
+            # server-to-server call sends neither Origin nor Referer by default, which
+            # the live API rejected with 403 {"errorMessage":
+            # "REQUEST_CONTEXT_BODY_HTTP_REFERRER_MISSING"} — and, confirmed via a real
+            # diagnostic run (2026-08-22), adding a Referer header did NOT satisfy this
+            # check, but an Origin header matching the registered domain did (200, real
+            # data). Despite the error message saying "REFERRER", Origin is what's
+            # actually checked.
             response = http_util.get(
-                SEARCH_URL, params=params, extra_headers={"Referer": "https://github.com/"}
+                SEARCH_URL, params=params, extra_headers={"Origin": "https://github.com"}
             )
         except Exception as exc:  # noqa: BLE001 - deliberately broad, isolated per-source
             raise SourceError(f"failed to fetch Rakuten search: {exc}") from exc
