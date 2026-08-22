@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-22T00:21:49.775687+00:00",
+  "checked_at": "2026-08-22T00:42:00.380853+00:00",
   "sources": {
     "official_keraeiko": {
       "count": 12,
@@ -9,7 +9,7 @@
     "ec_rakuten": {
       "count": 0,
       "ok": false,
-      "error": "failed to fetch Rakuten search: 400 Client Error: 400 for url: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?applicationId=pk_5a3GsLSwUATqmA9BghISoBSTbbdT85czG5wXU31h3Fn&keyword=%E3%81%82%E3%81%9F%E3%81%97%E3%83%B3%E3%83%81&hits=30&formatVersion=2"
+      "error": "failed to fetch Rakuten search: 403 Client Error: Error for url: https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701?format=json&applicationId=ea6a0751-2f9a-4552-bec1-e92701763ea7&accessKey=pk_5a3GsLSwUATqmA9BghISoBSTbbdT85czG5wXU31h3Fn&keyword=%E3%81%82%E3%81%9F%E3%81%97%E3%83%B3%E3%81%A1&genreId=0&hits=30"
     },
     "sns_x": {
       "count": 0,
