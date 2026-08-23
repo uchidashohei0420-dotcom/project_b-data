@@ -1732,5 +1732,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "大雨、多くない？？？？ https://t.co/zsl8RV5syQ"
+  },
+  {
+    "id": "sha256:30708e1e059faf31",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "当アカウント運営でもあるオットのエッセイ集が出ます。よろしくおねがいします🙏",
+    "url": "https://x.com/atashinchi_new/status/2091476166561636494",
+    "collected_at": "2026-08-23T13:45:04.366477+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "当アカウント運営でもあるオットのエッセイ集が出ます。よろしくおねがいします🙏"
+  },
+  {
+    "id": "sha256:1604542ef2074baf",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "地震怖いよ、地震😨 https://t.co/uG0CE1t60f",
+    "url": "https://x.com/atashinchi_new/status/2091442177025175892",
+    "collected_at": "2026-08-23T13:45:04.366477+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "地震怖いよ、地震😨 https://t.co/uG0CE1t60f"
   }
 ]
