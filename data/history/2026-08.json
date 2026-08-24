@@ -1766,5 +1766,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "地震怖いよ、地震😨 https://t.co/uG0CE1t60f"
+  },
+  {
+    "id": "sha256:2f0a6485281dfee3",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "ネットオフ楽天市場支店",
+    "title": "【中古】あたしンち　＜全21巻セット＞ / けらえいこ（コミックセット）",
+    "url": "https://item.rakuten.co.jp/renet3/0012082958/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-08-24T03:33:02.495933+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/09/00044/0012082958.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 5998,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/renet3/0012082958/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
   }
 ]
