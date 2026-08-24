@@ -1783,5 +1783,22 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/renet3/0012082958/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:2cc0530b53c4ee6a",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "夏も終わりですかねえ😊 https://t.co/FGiaQKNCWJ",
+    "url": "https://x.com/atashinchi_new/status/2091805209605612007",
+    "collected_at": "2026-08-24T14:25:05.702333+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "夏も終わりですかねえ😊 https://t.co/FGiaQKNCWJ"
   }
 ]
