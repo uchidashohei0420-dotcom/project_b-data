@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-24T14:25:05.702333+00:00",
+  "generated_at": "2026-08-25T03:15:37.913069+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:961ecb3481e7415d",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "ネットオフ 送料がお得店",
+      "title": "【中古】【全品10倍！8/20限定】あたしンち 20/ けらえいこ",
+      "url": "https://item.rakuten.co.jp/renet20/r0012113278/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-08-25T03:15:37.913069+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet20/cabinet/ccc101/0012113278.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 376,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/renet20/r0012113278/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
+    {
+      "id": "sha256:72646dfccf43d44d",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "ネットオフ 送料がお得店",
+      "title": "【中古】【全品10倍！8/20限定】あたしンち 19/ けらえいこ",
+      "url": "https://item.rakuten.co.jp/renet20/r0011905981/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-08-25T03:15:37.913069+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet20/cabinet/item_photo/001190/5/0011905981.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 376,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/renet20/r0011905981/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:2cc0530b53c4ee6a",
       "type": "news",
