@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-08-30T06:02:45.284893+00:00",
+  "generated_at": "2026-08-30T12:02:51.668906+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:4b357178fc107c3e",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "夏休みさいごの日々（1／2） https://t.co/RGb6YTCFJn",
+      "url": "https://x.com/atashinchi_new/status/2093944207581086189",
+      "collected_at": "2026-08-30T12:02:51.668906+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "夏休みさいごの日々（1／2） https://t.co/RGb6YTCFJn"
+    },
+    {
+      "id": "sha256:4e1a76621279d764",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "夏休み最後の日々（2／2） https://t.co/6d606ipXcF",
+      "url": "https://x.com/atashinchi_new/status/2093944367736336809",
+      "collected_at": "2026-08-30T12:02:51.668906+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "夏休み最後の日々（2／2） https://t.co/6d606ipXcF"
+    },
     {
       "id": "sha256:edccac323e2cc83d",
       "type": "news",
