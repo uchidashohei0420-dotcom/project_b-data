@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-08-31T06:03:05.051811+00:00",
+  "generated_at": "2026-08-31T12:02:47.367205+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:98b90a798a60f9ee",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "夏休み最後の日😊 https://t.co/HNpmFh99bo",
+      "url": "https://x.com/atashinchi_new/status/2094317722394096083",
+      "collected_at": "2026-08-31T12:02:47.367205+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "夏休み最後の日😊 https://t.co/HNpmFh99bo"
+    },
     {
       "id": "sha256:4b357178fc107c3e",
       "type": "news",
