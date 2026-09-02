@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-02T06:05:17.972198+00:00",
+  "generated_at": "2026-09-02T12:05:20.801381+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:3393867b13357437",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "note連載「月イチあたしンち」今月は、タチバナ家の隣に住むマンガ家さんの、生活のこだわりです😊https://t.co/hvZJ8duRhZ",
+      "url": "https://x.com/atashinchi_new/status/2095084279516795173",
+      "collected_at": "2026-09-02T12:05:20.801381+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "note連載「月イチあたしンち」今月は、タチバナ家の隣に住むマンガ家さんの、生活のこだわりです😊https://t.co/hvZJ8duRhZ"
+    },
     {
       "id": "sha256:44ca17b00201166d",
       "type": "goods",
