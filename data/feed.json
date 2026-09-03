@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-03T00:06:16.868569+00:00",
+  "generated_at": "2026-09-03T06:07:15.644790+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:bd753166899155b2",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "古本買取本舗 楽天市場店",
+      "title": "【漫画】【中古】あたしンち ＜1〜21巻完結＞ けらえいこ 【全巻セット】",
+      "url": "https://item.rakuten.co.jp/furuhon-kaitori-honpo/10009022/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-09-03T06:07:15.644790+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/furuhon-kaitori-honpo/cabinet/c01-0216.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 4940,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/furuhon-kaitori-honpo/10009022/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
+    {
+      "id": "sha256:95c892f2e1c32b12",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "アカデミア港北店さま、毎度、ありがたいです😭",
+      "url": "https://x.com/atashinchi_new/status/2095375685724639350",
+      "collected_at": "2026-09-03T06:07:15.644790+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "アカデミア港北店さま、毎度、ありがたいです😭"
+    },
     {
       "id": "sha256:3393867b13357437",
       "type": "news",
