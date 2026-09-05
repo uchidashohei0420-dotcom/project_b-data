@@ -66,5 +66,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "アカデミア港北店さま、毎度、ありがたいです😭"
+  },
+  {
+    "id": "sha256:ede3dec2eee7023b",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "おもしろ……😊\n\nhttps://t.co/soi7jo2L0X",
+    "url": "https://x.com/atashinchi_new/status/2095902141248688132",
+    "collected_at": "2026-09-05T00:06:03.861694+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "おもしろ……😊\n\nhttps://t.co/soi7jo2L0X"
   }
 ]

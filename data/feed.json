@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-04T12:05:09.431269+00:00",
+  "generated_at": "2026-09-05T00:06:03.861694+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:ede3dec2eee7023b",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "おもしろ……😊\n\nhttps://t.co/soi7jo2L0X",
+      "url": "https://x.com/atashinchi_new/status/2095902141248688132",
+      "collected_at": "2026-09-05T00:06:03.861694+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "おもしろ……😊\n\nhttps://t.co/soi7jo2L0X"
+    },
     {
       "id": "sha256:bd753166899155b2",
       "type": "goods",
