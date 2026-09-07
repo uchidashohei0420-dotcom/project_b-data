@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-07T06:05:28.806592+00:00",
+  "generated_at": "2026-09-07T12:05:13.543060+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:f07ec4ee06acb27d",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "VALUE BOOKS",
+      "title": "【中古】あたしンち 第5巻 /メディアファクトリ-/けらえいこ（単行本）",
+      "url": "https://item.rakuten.co.jp/vaboo/va8647991488u30/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-09-07T12:05:13.543060+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/vaboo/cabinet/items/bk0482/im250404653730.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 340,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/vaboo/va8647991488u30/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:a7793d8ecb38f72e",
       "type": "news",
