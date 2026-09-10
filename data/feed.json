@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-09T12:05:17.328069+00:00",
+  "generated_at": "2026-09-10T00:05:42.652034+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:86696ddf92c7689c",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "AERAデジタル連載「タテ読みあたしンち」\n\n今週は、母のすることを、いつも見ている父😊\nというお話😊https://t.co/9yt6yf8Ldc",
+      "url": "https://x.com/atashinchi_new/status/2097814812663148634",
+      "collected_at": "2026-09-10T00:05:42.652034+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」\n\n今週は、母のすることを、いつも見ている父😊\nというお話😊https://t.co/9yt6yf8Ldc"
+    },
     {
       "id": "sha256:c31b1524c458b022",
       "type": "goods",
