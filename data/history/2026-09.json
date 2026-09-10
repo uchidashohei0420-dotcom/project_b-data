@@ -202,5 +202,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」\n\n今週は、母のすることを、いつも見ている父😊\nというお話😊https://t.co/9yt6yf8Ldc"
+  },
+  {
+    "id": "sha256:56d0266050a5f832",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "VALUE BOOKS",
+    "title": "【中古】あたしンち 第18巻/メディアファクトリ-/けらえいこ（単行本）",
+    "url": "https://item.rakuten.co.jp/vaboo/va8864014484u20/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-09-10T12:05:21.907087+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/vaboo/cabinet/items/bk0735/im250905411441.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 607,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/vaboo/va8864014484u20/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
+  },
+  {
+    "id": "sha256:27a1bf1069750a3f",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "もったいない本舗 楽天市場店",
+    "title": "【中古】 あたしンち（第8巻） / けら えいこ / KADOKAWA(メディアファクトリー) [コミック]【メール便送料無料】【最短翌日配達対応】",
+    "url": "https://item.rakuten.co.jp/comicset/4840106142/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-09-10T12:05:21.907087+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05228176/bk2mc9max9zrpqcw.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 259,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/comicset/4840106142/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
   }
 ]
