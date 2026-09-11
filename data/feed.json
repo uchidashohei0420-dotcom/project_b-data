@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-11T02:05:38.394013+00:00",
+  "generated_at": "2026-09-11T10:14:27.464630+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:0f79ddd4c13532f1",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "けらさんが「救われた！😭みんな聞いて！」と！",
+      "url": "https://x.com/atashinchi_new/status/2098250821905616926",
+      "collected_at": "2026-09-11T10:14:27.464630+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "けらさんが「救われた！😭みんな聞いて！」と！"
+    },
+    {
+      "id": "sha256:f01fa4683a635ba7",
+      "type": "event",
+      "source_type": "sns",
+      "source_name": "@spainzakastudio(@atashinchi_newがRT)",
+      "title": "【街角からON AIR「渋谷スペイン坂放送室」 |  たなかさんに聞くマンガの話📚】\n渋谷PARCOにてマンガ持ち込みと同時に開催したトークイベントでは、漫画家",
+      "url": "https://x.com/spainzakastudio/status/2097969037359919242",
+      "collected_at": "2026-09-11T10:14:27.464630+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "【街角からON AIR「渋谷スペイン坂放送室」 |  たなかさんに聞くマンガの話📚】\n渋谷PARCOにてマンガ持ち込みと同時に開催したトークイベントでは、漫画家や編集者、俳優、音楽家など、多彩なジャンルで活躍するゲストを迎え「あの人に聞きたい、マンガの話」をテーマに公開収録を行いました。\n\n公開収録の模様を、リール動画で少しだけご紹介します。\nトークの全編は、ポッドキャストでお楽しみください🎙️\n\nー\n\nポッドキャスト：https://t.co/wG5cluUHAw\nゲスト：たなかみさき\n\nー\n\nおすすめマンガ\n『あたしンち』けらえいこ著（KADOKAWA）\n\nー\n\nポッドキャストは上記リンクから🔗\n渋谷スペイン坂編集室の今後の詳細は @spainzakastudio より公式HP・SNSをご確認ください。\n#PARCO #パルコ #渋谷スペイン坂編集室 #講談社 #たなかみさき"
+    },
     {
       "id": "sha256:aba801603b030309",
       "type": "news",
