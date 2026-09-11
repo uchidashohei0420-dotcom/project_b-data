@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-10T12:05:21.907087+00:00",
+  "generated_at": "2026-09-11T02:05:38.394013+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:aba801603b030309",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "デレクさん、思い出してくださって、ありがとう😊原作でいうと、こちらのエピソードですね😊 https://t.co/1QNPuPr1pk",
+      "url": "https://x.com/atashinchi_new/status/2098033755344777541",
+      "collected_at": "2026-09-11T02:05:38.394013+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "デレクさん、思い出してくださって、ありがとう😊原作でいうと、こちらのエピソードですね😊 https://t.co/1QNPuPr1pk"
+    },
+    {
+      "id": "sha256:a513932c95c6dc1e",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "ワンランク上のあるある😊😊 https://t.co/MIQHG7HOkT",
+      "url": "https://x.com/atashinchi_new/status/2098034307281662035",
+      "collected_at": "2026-09-11T02:05:38.394013+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "ワンランク上のあるある😊😊 https://t.co/MIQHG7HOkT"
+    },
     {
       "id": "sha256:56d0266050a5f832",
       "type": "goods",
