@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-12T02:11:09.128775+00:00",
+  "generated_at": "2026-09-12T09:48:20.375121+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:0a01ed89dbec84e9",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "以前「真のあたしンち最強キャラを決める！」動画をあげてくれた、大久保八億さんが、オットの本を読んでくださってます🙏\n\nありがとうございます！（当アカ運営・オット",
+      "url": "https://x.com/atashinchi_new/status/2098607533136978169",
+      "collected_at": "2026-09-12T09:48:20.375121+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "以前「真のあたしンち最強キャラを決める！」動画をあげてくれた、大久保八億さんが、オットの本を読んでくださってます🙏\n\nありがとうございます！（当アカ運営・オット）🙏"
+    },
     {
       "id": "sha256:0f79ddd4c13532f1",
       "type": "news",
