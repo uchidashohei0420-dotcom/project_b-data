@@ -389,5 +389,22 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/thrive/ata-yuzumc-k/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:82a0c1ca758b7e76",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@marimiiko(@atashinchi_newがRT)",
+    "title": "そうなの、同期なのです。\n仲良く過ごしたねえ。",
+    "url": "https://x.com/marimiiko/status/2093311742730445054",
+    "collected_at": "2026-09-15T10:41:55.483022+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "そうなの、同期なのです。\n仲良く過ごしたねえ。"
   }
 ]
