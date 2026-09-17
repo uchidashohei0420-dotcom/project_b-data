@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-17T02:28:51.563273+00:00",
+  "generated_at": "2026-09-17T10:40:07.931705+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:ad0e108a7aae48df",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "ある秋の日のひとこま https://t.co/YtaskFV8Gv",
+      "url": "https://x.com/atashinchi_new/status/2100510478946689218",
+      "collected_at": "2026-09-17T10:40:07.931705+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "ある秋の日のひとこま https://t.co/YtaskFV8Gv"
+    },
+    {
+      "id": "sha256:ce9b7a8e8f4e8a7e",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "https://t.co/29IsAU8NZ6",
+      "url": "https://x.com/atashinchi_new/status/2100510589114261764",
+      "collected_at": "2026-09-17T10:40:07.931705+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "https://t.co/29IsAU8NZ6"
+    },
     {
       "id": "sha256:82a0c1ca758b7e76",
       "type": "news",
