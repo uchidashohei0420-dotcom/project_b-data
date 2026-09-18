@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-18T02:14:19.220542+00:00",
+  "generated_at": "2026-09-18T10:15:41.637056+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:3fb977b82089ed7c",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "いよいよ、あれが、発表されます！！！！！",
+      "url": "https://x.com/atashinchi_new/status/2100880687247315181",
+      "collected_at": "2026-09-18T10:15:41.637056+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "いよいよ、あれが、発表されます！！！！！"
+    },
+    {
+      "id": "sha256:8c191e4a4b74fa45",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchimovie(@atashinchi_newがRT)",
+      "title": "＼明日9/19(土)は #ABEMAアニメ祭2026 ／\n\n「シンエイ動画50周年記念スペシャルステージ」にて、\n『あたしンち』から新情報が…!? 👀\nステージ",
+      "url": "https://x.com/atashinchimovie/status/2100872460186906985",
+      "collected_at": "2026-09-18T10:15:41.637056+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "＼明日9/19(土)は #ABEMAアニメ祭2026 ／\n\n「シンエイ動画50周年記念スペシャルステージ」にて、\n『あたしンち』から新情報が…!? 👀\nステージの模様はABEMAで生配信予定です📺\nぜひお見逃しなく！\n\n▶日程：9月19日（土）\n▶時間：12:25～13:05\n▶生配信：https://t.co/94XXBQAwfo\n\n#あたしンち"
+    },
     {
       "id": "sha256:ad0e108a7aae48df",
       "type": "news",
