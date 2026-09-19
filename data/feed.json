@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-19T09:57:52.314440+00:00",
+  "generated_at": "2026-09-19T15:02:48.266726+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:a70fc49418aa2fe9",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "もったいない本舗 楽天市場店",
+      "title": "【中古】 あたしンち（第1巻） / けら えいこ / KADOKAWA(メディアファクトリー) [コミック]【メール便送料無料】【最短翌日配達対応】",
+      "url": "https://item.rakuten.co.jp/comicset/4889913467/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-09-19T15:02:48.266726+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05305467/bkbn1vb5kfkeudgj.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 259,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/comicset/4889913467/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:ec43dbe4ad8b0d34",
       "type": "news",
