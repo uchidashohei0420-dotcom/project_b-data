@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-09-19T02:17:03.985903+00:00",
+  "generated_at": "2026-09-19T09:57:52.314440+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:ec43dbe4ad8b0d34",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "あたしンちNEXT「新エピソード制作決定！」 🎉\n監督は「ヤニねこ」の木村拓さん！😊\n予告編\nhttps://t.co/LlS9htaofq",
+      "url": "https://x.com/atashinchi_new/status/2101220122614771751",
+      "collected_at": "2026-09-19T09:57:52.314440+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "あたしンちNEXT「新エピソード制作決定！」 🎉\n監督は「ヤニねこ」の木村拓さん！😊\n予告編\nhttps://t.co/LlS9htaofq"
+    },
+    {
+      "id": "sha256:0b20c3a373c53326",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "見てコレ、めっちゃ楽しそう😊 https://t.co/Y820V0Vcug",
+      "url": "https://x.com/atashinchi_new/status/2101221275096232057",
+      "collected_at": "2026-09-19T09:57:52.314440+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "見てコレ、めっちゃ楽しそう😊 https://t.co/Y820V0Vcug"
+    },
     {
       "id": "sha256:38881d8e3be17128",
       "type": "goods",
