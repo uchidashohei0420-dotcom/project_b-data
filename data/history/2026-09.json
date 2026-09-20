@@ -593,5 +593,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "ぽつりぽつりと、見つけた❗というご報告いただいています。\n\n10月初旬には、全国のドラッグストア等に、第2弾の入荷が届く予定です😊"
+  },
+  {
+    "id": "sha256:eaed87a04228216a",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "https://t.co/c7tbaWgJHC",
+    "url": "https://x.com/atashinchi_new/status/2101551103175426224",
+    "collected_at": "2026-09-20T10:18:00.403545+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "https://t.co/c7tbaWgJHC"
+  },
+  {
+    "id": "sha256:170a3e256515297e",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "今日は、バスの日。\n\nバスの車内で、ガールズトーク😊 https://t.co/GU4pYv8eW8",
+    "url": "https://x.com/atashinchi_new/status/2101506639501418958",
+    "collected_at": "2026-09-20T10:18:00.403545+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "今日は、バスの日。\n\nバスの車内で、ガールズトーク😊 https://t.co/GU4pYv8eW8"
   }
 ]
