@@ -627,5 +627,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "今日は、バスの日。\n\nバスの車内で、ガールズトーク😊 https://t.co/GU4pYv8eW8"
+  },
+  {
+    "id": "sha256:c20bea9a463b0975",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "😊😊かわいい！",
+    "url": "https://x.com/atashinchi_new/status/2102298975693074691",
+    "collected_at": "2026-09-22T10:35:40.510719+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "😊😊かわいい！"
   }
 ]
