@@ -899,5 +899,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "「ヤニねこ」からの〜〜〜"
+  },
+  {
+    "id": "sha256:91cbe98c6ee03d07",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "楽天ブックス",
+    "title": "あたしンち 笑える×笑える傑作選 [ 渡辺久美子 他 ]",
+    "url": "https://item.rakuten.co.jp/book/11238149/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-09-25T02:33:11.013258+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2080/4934569642080.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 1683,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/book/11238149/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
+  },
+  {
+    "id": "sha256:a0e9fdc82e8f343d",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "見ーてー♪",
+    "url": "https://x.com/atashinchi_new/status/2103248131903344909",
+    "collected_at": "2026-09-25T02:33:11.013258+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "見ーてー♪"
   }
 ]
