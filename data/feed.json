@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-09-27T11:02:38.636407+00:00",
+  "generated_at": "2026-09-27T16:02:28.222434+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:5a000d36f367eafc",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "ネットオフ楽天市場支店",
+      "title": "【中古】アニメ　あたしンち一万円ポッキリバス旅行で大騒動 / けらえいこ",
+      "url": "https://item.rakuten.co.jp/renet3/0011487555/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-09-27T16:02:28.222434+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/cccs32/0011487555.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 220,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/renet3/0011487555/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:91cbe98c6ee03d07",
       "type": "goods",
