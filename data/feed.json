@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-10-01T03:09:09.985497+00:00",
+  "generated_at": "2026-10-01T12:04:26.699740+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:22c8be0416505dc2",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "今日から10月！　なのにこの暑さはなに？\n\n買いだめて余った、アイスとか今日、食べます😊 https://t.co/Kxye1mwBJG",
+      "url": "https://x.com/atashinchi_new/status/2105585273828700369",
+      "collected_at": "2026-10-01T12:04:26.699740+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "今日から10月！　なのにこの暑さはなに？\n\n買いだめて余った、アイスとか今日、食べます😊 https://t.co/Kxye1mwBJG"
+    },
+    {
+      "id": "sha256:35a8a68cfd57bade",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "note連載「月イチあたしンち（無料）」今月は、中学生も二郎を食べに行きたい、でもさあ……というお話😊　美味しいの、食べに行きたいよね！\n\nhttps://t.",
+      "url": "https://x.com/atashinchi_new/status/2105581832276430913",
+      "collected_at": "2026-10-01T12:04:26.699740+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "note連載「月イチあたしンち（無料）」今月は、中学生も二郎を食べに行きたい、でもさあ……というお話😊　美味しいの、食べに行きたいよね！\n\nhttps://t.co/Wn4GyezKYf"
+    },
     {
       "id": "sha256:554a59a3a33c3813",
       "type": "news",
