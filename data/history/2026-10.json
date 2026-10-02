@@ -49,5 +49,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "https://t.co/yK71STjarj"
+  },
+  {
+    "id": "sha256:190bbd60bedebabb",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "今日は、10月2日、豆腐の日なんだそう😊 https://t.co/YLXCHX2xsC",
+    "url": "https://x.com/atashinchi_new/status/2105904758750109843",
+    "collected_at": "2026-10-02T11:35:38.449812+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "今日は、10月2日、豆腐の日なんだそう😊 https://t.co/YLXCHX2xsC"
   }
 ]
