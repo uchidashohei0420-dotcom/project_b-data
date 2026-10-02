@@ -32,5 +32,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "note連載「月イチあたしンち（無料）」今月は、中学生も二郎を食べに行きたい、でもさあ……というお話😊　美味しいの、食べに行きたいよね！\n\nhttps://t.co/Wn4GyezKYf"
+  },
+  {
+    "id": "sha256:4e24b8d4e9929bbe",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "https://t.co/yK71STjarj",
+    "url": "https://x.com/atashinchi_new/status/2105686762232381511",
+    "collected_at": "2026-10-02T03:11:01.223148+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "https://t.co/yK71STjarj"
   }
 ]
