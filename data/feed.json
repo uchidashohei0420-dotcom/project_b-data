@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-02T17:03:15.619788+00:00",
+  "generated_at": "2026-10-03T02:56:55.199708+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:b6a28b86caa9e3df",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "もったいない本舗 楽天市場店",
+      "title": "【中古】 あたしンち（第16巻） / けら えいこ / KADOKAWA/メディアファクトリー [コミック]【メール便送料無料】【最短翌日配達対応】",
+      "url": "https://item.rakuten.co.jp/comicset/4840135207/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-10-03T02:56:55.199708+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05245635/bkmm7lwvk6yzghzz.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 364,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/comicset/4840135207/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:190bbd60bedebabb",
       "type": "news",
