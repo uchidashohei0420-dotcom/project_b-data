@@ -83,5 +83,39 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/comicset/4840135207/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:e2498c8c01ca4457",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "登山道具を買うのは、楽しい（1/2)😊 https://t.co/gCoIxstudu",
+    "url": "https://x.com/atashinchi_new/status/2106288627085140363",
+    "collected_at": "2026-10-03T10:49:34.167276+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "登山道具を買うのは、楽しい（1/2)😊 https://t.co/gCoIxstudu"
+  },
+  {
+    "id": "sha256:62e62bbfe6d58a14",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "登山道具を買うのは、楽しい（2/2)😊 https://t.co/Mc4sJ2SaGx",
+    "url": "https://x.com/atashinchi_new/status/2106289002634776701",
+    "collected_at": "2026-10-03T10:49:34.167276+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "登山道具を買うのは、楽しい（2/2)😊 https://t.co/Mc4sJ2SaGx"
   }
 ]
