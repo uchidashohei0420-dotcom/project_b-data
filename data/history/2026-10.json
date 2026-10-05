@@ -253,5 +253,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "あたしンちのガチャが素晴らしかった動画 https://t.co/cIpJED21Qm"
+  },
+  {
+    "id": "sha256:1ed692494d5df99f",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "ゆ……許す😅",
+    "url": "https://x.com/atashinchi_new/status/2106800067890040990",
+    "collected_at": "2026-10-05T03:04:34.501588+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "ゆ……許す😅"
+  },
+  {
+    "id": "sha256:6672925cd77d89b6",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "https://t.co/QJnblejv3O\n\nふくらむところがカワイイです😊",
+    "url": "https://x.com/atashinchi_new/status/2106800200744624239",
+    "collected_at": "2026-10-05T03:04:34.501588+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "https://t.co/QJnblejv3O\n\nふくらむところがカワイイです😊"
   }
 ]
