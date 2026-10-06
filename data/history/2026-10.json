@@ -338,5 +338,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "制服の下に、パジャマ😊 https://t.co/SGeBgGJcfb"
+  },
+  {
+    "id": "sha256:a53adc43b58c5e5f",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "おもしろかったー😊\n\nにぼしのみそ汁で笑われたあと、ギョーザのみそ汁の話をしたとき（これくらいなら、みんなあるだろうと）思って出したという、内面への解像度よ🙏",
+    "url": "https://x.com/atashinchi_new/status/2107362246695522381",
+    "collected_at": "2026-10-06T12:26:21.810276+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "おもしろかったー😊\n\nにぼしのみそ汁で笑われたあと、ギョーザのみそ汁の話をしたとき（これくらいなら、みんなあるだろうと）思って出したという、内面への解像度よ🙏"
+  },
+  {
+    "id": "sha256:5864a2fb1e443ecd",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@NIBOSHIIWASHI21(@atashinchi_newがRT)",
+    "title": "#あたしンち しか漫画を読んだことのないいわしによる母クイズ見てください\nhttps://t.co/oh1VUcYPzh https://t.co/keoUhv",
+    "url": "https://x.com/NIBOSHIIWASHI21/status/2106532121120792862",
+    "collected_at": "2026-10-06T12:26:21.810276+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "#あたしンち しか漫画を読んだことのないいわしによる母クイズ見てください\nhttps://t.co/oh1VUcYPzh https://t.co/keoUhvMQcR"
   }
 ]
