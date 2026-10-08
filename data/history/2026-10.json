@@ -372,5 +372,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "#あたしンち しか漫画を読んだことのないいわしによる母クイズ見てください\nhttps://t.co/oh1VUcYPzh https://t.co/keoUhvMQcR"
+  },
+  {
+    "id": "sha256:49336463dab98977",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "ネットオフ楽天市場支店",
+    "title": "【中古】アニメあたしンち−タチバナ家方面、今日も晴れ！− / けらえいこ",
+    "url": "https://item.rakuten.co.jp/renet3/0011039138/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-10-08T12:28:56.845361+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/cccs26/0011039138.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 220,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/renet3/0011039138/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
   }
 ]
