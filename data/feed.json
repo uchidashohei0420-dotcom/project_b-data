@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-10T11:35:45.538643+00:00",
+  "generated_at": "2026-10-10T16:36:31.761822+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:2525ad57a63aec5b",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "もったいない本舗 楽天市場店",
+      "title": "【中古】 あたしンち（第6巻） / けら えいこ / KADOKAWA(メディアファクトリー) [コミック]【メール便送料無料】【最短翌日配達対応】",
+      "url": "https://item.rakuten.co.jp/comicset/4840100802/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-10-10T16:36:31.761822+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05347066/bke5mtmflazjtpim.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 259,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/comicset/4840100802/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:d06aa0fd91c8b93e",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 220,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/renet3/0011925533/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:14a4de8ef57f2841",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "ネットオフ楽天市場支店",
-      "title": "【中古】【全品10倍！8/20限定】あたしンち 5/ けらえいこ",
-      "url": "https://item.rakuten.co.jp/renet3/0000801983/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/13/00061/0000801983.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 220,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/renet3/0000801983/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]
