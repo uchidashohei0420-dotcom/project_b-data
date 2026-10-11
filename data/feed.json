@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-10-11T02:57:20.207477+00:00",
+  "generated_at": "2026-10-11T11:49:17.117796+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:4eef09fad876ef7a",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@yuri_wttb3koily(@atashinchi_newがRT)",
+      "title": "あたしンちの母と父のこういう関係好きです。父は無口でクールな人だけどちゃんと母を愛していて可愛いと思ってるんだよね。あたしンち見てて思うのは家族がちゃんとしてる",
+      "url": "https://x.com/yuri_wttb3koily/status/2109149112348422470",
+      "collected_at": "2026-10-11T11:49:17.117796+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "あたしンちの母と父のこういう関係好きです。父は無口でクールな人だけどちゃんと母を愛していて可愛いと思ってるんだよね。あたしンち見てて思うのは家族がちゃんとしてる。父がちゃんとしてる。母をフォローしたり子供をフォローしたりしてくれるし話に入ってくれるし良いなって思う"
+    },
+    {
+      "id": "sha256:f4045e13ae1f62d1",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@mangararin(@atashinchi_newがRT)",
+      "title": "🏠けらえいこ先生の『あたしンち』\n\n全21巻が50％ポイント還元！🔥\n18,480円→9,240pt還元\n\nアニメでもおなじみ\nタチバナ家の日常を描く国民的ホー",
+      "url": "https://x.com/mangararin/status/2108329128940519546",
+      "collected_at": "2026-10-11T11:49:17.117796+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "🏠けらえいこ先生の『あたしンち』\n\n全21巻が50％ポイント還元！🔥\n18,480円→9,240pt還元\n\nアニメでもおなじみ\nタチバナ家の日常を描く国民的ホームコメディ\n\n⏰10/12まで\n\nhttps://t.co/mm0ZOUSVOW\n\n#PR #Kindleセール"
+    },
     {
       "id": "sha256:19c53be8a2c1cd50",
       "type": "news",
@@ -3366,40 +3400,6 @@
       "price_jpy": 1980,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/collecolle-teddy/661863/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:d67d1654aee272ce",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "もったいない本舗 楽天市場店",
-      "title": "【中古】 あたしンち（第3巻） / けら えいこ / KADOKAWA(メディアファクトリー) [コミック]【メール便送料無料】【最短翌日配達対応】",
-      "url": "https://item.rakuten.co.jp/comicset/4889914285/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05305467/bknp4b1tc1x5tuxx.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 259,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/comicset/4889914285/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:fe95dfe5d43eb0b9",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "逸品shopコレコレ",
-      "title": "あたしンち マスコット 父【バンダイナムコヌイ】大人気 漫画キャラクター",
-      "url": "https://item.rakuten.co.jp/collecolle-teddy/661931/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/collecolle-teddy/cabinet/08274649/imgrc0100845419.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 1210,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/collecolle-teddy/661931/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]
