@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-10T16:36:31.761822+00:00",
+  "generated_at": "2026-10-11T02:57:20.207477+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:19c53be8a2c1cd50",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "https://t.co/CfMCoXeaLF",
+      "url": "https://x.com/atashinchi_new/status/2109099570655564197",
+      "collected_at": "2026-10-11T02:57:20.207477+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "https://t.co/CfMCoXeaLF"
+    },
     {
       "id": "sha256:2525ad57a63aec5b",
       "type": "goods",
@@ -3383,23 +3400,6 @@
       "price_jpy": 1210,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/collecolle-teddy/661931/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:55275297bbc9e8de",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "ネットオフ楽天市場支店",
-      "title": "【中古】【全品10倍！8/20限定】アニメあたしンち　誰も知らないタチバナ家のひみつ / けらえいこ",
-      "url": "https://item.rakuten.co.jp/renet3/0011925533/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/item_photo/001192/5/0011925533.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 220,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/renet3/0011925533/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]

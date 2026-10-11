@@ -525,5 +525,22 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/comicset/4840100802/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:19c53be8a2c1cd50",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "https://t.co/CfMCoXeaLF",
+    "url": "https://x.com/atashinchi_new/status/2109099570655564197",
+    "collected_at": "2026-10-11T02:57:20.207477+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "https://t.co/CfMCoXeaLF"
   }
 ]
