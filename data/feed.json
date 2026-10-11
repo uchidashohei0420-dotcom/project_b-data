@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-11T11:49:17.117796+00:00",
+  "generated_at": "2026-10-11T17:02:02.073759+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:51ab938c99c00b6a",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "「あたしンち」全21巻、電書が50％オフ（ポイント還元）😃\n\n今日12日いっぱい😃よろしければ〜\n\nhttps://t.co/4tPOgrVfye",
+      "url": "https://x.com/atashinchi_new/status/2109322276676173912",
+      "collected_at": "2026-10-11T17:02:02.073759+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "「あたしンち」全21巻、電書が50％オフ（ポイント還元）😃\n\n今日12日いっぱい😃よろしければ〜\n\nhttps://t.co/4tPOgrVfye"
+    },
     {
       "id": "sha256:4eef09fad876ef7a",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 10780,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/mangazenkan/m5220401561/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:5e18517e59283d41",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "逸品shopコレコレ",
-      "title": "あたしンち ぬいぐるみ 母 大人気 漫画キャラクター ぬい撮り ギフト ちびぬい",
-      "url": "https://item.rakuten.co.jp/collecolle-teddy/661863/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/collecolle-teddy/cabinet/08274649/imgrc0100845152.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 1980,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/collecolle-teddy/661863/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]
