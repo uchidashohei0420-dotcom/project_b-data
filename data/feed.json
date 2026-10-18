@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-18T10:06:43.529594+00:00",
+  "generated_at": "2026-10-18T15:06:07.681602+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:77a0d63c2414075a",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@jnennnnn(@atashinchi_newがRT)",
+      "title": "みつけたうれしーー🎶  #あたしンち https://t.co/eCv4AF4bZW",
+      "url": "https://x.com/jnennnnn/status/2111786172804640993",
+      "collected_at": "2026-10-18T15:06:07.681602+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "みつけたうれしーー🎶  #あたしンち https://t.co/eCv4AF4bZW"
+    },
     {
       "id": "sha256:4b438fe8200e77c1",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 990,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/book/16803873/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:d1d32f54e36ff780",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "bookfan 1号店 楽天市場店",
-      "title": "＜全品15倍 ※8/24~27限定 要エントリー＞あたしンちSUPER 第4巻／けらえいこ",
-      "url": "https://item.rakuten.co.jp/booxstore/bk-4022521198/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/booxstore/cabinet/01292/bk4022521198.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 990,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/booxstore/bk-4022521198/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]

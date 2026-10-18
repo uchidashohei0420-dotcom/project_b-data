@@ -763,5 +763,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "ちょうど、このあたりから、観戦してたそうです！ https://t.co/mMR125IZAk"
+  },
+  {
+    "id": "sha256:77a0d63c2414075a",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@jnennnnn(@atashinchi_newがRT)",
+    "title": "みつけたうれしーー🎶  #あたしンち https://t.co/eCv4AF4bZW",
+    "url": "https://x.com/jnennnnn/status/2111786172804640993",
+    "collected_at": "2026-10-18T15:06:07.681602+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "みつけたうれしーー🎶  #あたしンち https://t.co/eCv4AF4bZW"
   }
 ]
