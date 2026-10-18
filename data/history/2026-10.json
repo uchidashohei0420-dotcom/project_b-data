@@ -746,5 +746,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "あ、でもほら、ソフトバンクとやらずにすんだと思えば（西武ファン）"
+  },
+  {
+    "id": "sha256:4b438fe8200e77c1",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "ちょうど、このあたりから、観戦してたそうです！ https://t.co/mMR125IZAk",
+    "url": "https://x.com/atashinchi_new/status/2111753815338983827",
+    "collected_at": "2026-10-18T10:06:43.529594+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "ちょうど、このあたりから、観戦してたそうです！ https://t.co/mMR125IZAk"
   }
 ]
