@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-19T11:35:16.032393+00:00",
+  "generated_at": "2026-10-19T17:58:10.166999+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:110a49056c04feda",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "楽天ブックス",
+      "title": "あたしンち　ベスト4　ユズヒコ友情編 [ けら　えいこ ]",
+      "url": "https://item.rakuten.co.jp/book/16119088/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-10-19T17:58:10.166999+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6541/9784022516541_1_2.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 1078,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/book/16119088/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:77a0d63c2414075a",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 3850,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/thrive/ata-bighaha/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:c682841186097c6b",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "楽天ブックス",
-      "title": "あたしンち　SUPER　第1巻 [ けら　えいこ ]",
-      "url": "https://item.rakuten.co.jp/book/16803873/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7906/9784022517906_1_3.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 990,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/book/16803873/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]
