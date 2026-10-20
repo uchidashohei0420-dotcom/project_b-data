@@ -797,5 +797,22 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/book/16119088/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:5d5afa47527f602f",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "AERAデジタル連載「タテ読みあたしンち」人気のテーマ「母の人生訓」なんか、すごく、いいこと言ってるみたい😊\n\nhttps://t.co/3LetwaVygX",
+    "url": "https://x.com/atashinchi_new/status/2112561332281323680",
+    "collected_at": "2026-10-20T16:02:13.001192+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」人気のテーマ「母の人生訓」なんか、すごく、いいこと言ってるみたい😊\n\nhttps://t.co/3LetwaVygX"
   }
 ]
