@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-21T02:33:24.181287+00:00",
+  "generated_at": "2026-10-21T10:50:43.076579+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:b24e23c660687ee4",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@gichiasaji(@atashinchi_newがRT)",
+      "title": "今日は、けらえいこ先生の『あたしンち』のお母さんのおにぎりを真似っこしました🍙\n本屋さんで働いていた時、先輩から教えてもらってハマった『あたしンち』\nタチバナ家",
+      "url": "https://x.com/gichiasaji/status/2111343778288304399",
+      "collected_at": "2026-10-21T10:50:43.076579+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "今日は、けらえいこ先生の『あたしンち』のお母さんのおにぎりを真似っこしました🍙\n本屋さんで働いていた時、先輩から教えてもらってハマった『あたしンち』\nタチバナ家にたまに帰りたくなる。\n#OnigiriAction https://t.co/lk1AYtCIXo"
+    },
     {
       "id": "sha256:5d5afa47527f602f",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 990,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/book/17895005/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:20c94c4bbfb685f5",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "bookfan 2号店 楽天市場店",
-      "title": "＜最大10万pt当選※5千円以上購入&エントリー 8/20~31まで＞あたしンちSUPER 第3巻／けらえいこ",
-      "url": "https://item.rakuten.co.jp/bookfan/bk-4022519940/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/bookfan/cabinet/01115/bk4022519940.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 990,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/bookfan/bk-4022519940/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]
