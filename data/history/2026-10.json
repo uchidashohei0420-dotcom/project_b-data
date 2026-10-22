@@ -831,5 +831,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "今日は、けらえいこ先生の『あたしンち』のお母さんのおにぎりを真似っこしました🍙\n本屋さんで働いていた時、先輩から教えてもらってハマった『あたしンち』\nタチバナ家にたまに帰りたくなる。\n#OnigiriAction https://t.co/lk1AYtCIXo"
+  },
+  {
+    "id": "sha256:10efafc6616f6bab",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "VALUE BOOKS",
+    "title": "【中古】あたしンち 第20巻/KADOKAWA/けらえいこ（単行本）",
+    "url": "https://item.rakuten.co.jp/vaboo/va1066067404u20/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-10-22T02:30:29.708302+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/vaboo/cabinet/items/bk0577/im250900129448.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 1033,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/vaboo/va1066067404u20/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
   }
 ]
