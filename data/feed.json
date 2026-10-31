@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-31T03:19:22.519079+00:00",
+  "generated_at": "2026-10-31T11:25:46.525551+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:09a128bcc314c71a",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "ハロウィンは、どんな感じですか？ https://t.co/xtTNagBkIg",
+      "url": "https://x.com/atashinchi_new/status/2116417621570777520",
+      "collected_at": "2026-10-31T11:25:46.525551+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "ハロウィンは、どんな感じですか？ https://t.co/xtTNagBkIg"
+    },
     {
       "id": "sha256:1fbaccd55ba07e66",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 10780,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/book/16959714/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:711ba9d65dd68b2b",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "楽天Kobo電子書籍ストア",
-      "title": "あたしンちSUPER（4） 【電子書籍】[ けらえいこ ]",
-      "url": "https://item.rakuten.co.jp/rakutenkobo-ebooks/9eebfbfd2dce3b07803f60a4e04a088c/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/7803/2000019747803.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 990,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/rakutenkobo-ebooks/9eebfbfd2dce3b07803f60a4e04a088c/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]

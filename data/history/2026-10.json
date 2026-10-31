@@ -950,5 +950,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "ハッピーハロウィーン🎃 https://t.co/Y9qlDfw5tn"
+  },
+  {
+    "id": "sha256:09a128bcc314c71a",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "ハロウィンは、どんな感じですか？ https://t.co/xtTNagBkIg",
+    "url": "https://x.com/atashinchi_new/status/2116417621570777520",
+    "collected_at": "2026-10-31T11:25:46.525551+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "ハロウィンは、どんな感じですか？ https://t.co/xtTNagBkIg"
   }
 ]
