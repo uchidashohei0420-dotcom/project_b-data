@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-30T17:28:25.784827+00:00",
+  "generated_at": "2026-10-31T03:19:22.519079+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:1fbaccd55ba07e66",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "ハッピーハロウィーン🎃 https://t.co/Y9qlDfw5tn",
+      "url": "https://x.com/atashinchi_new/status/2116334336920457275",
+      "collected_at": "2026-10-31T03:19:22.519079+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "ハッピーハロウィーン🎃 https://t.co/Y9qlDfw5tn"
+    },
     {
       "id": "sha256:b44d0d7eef2bc5c8",
       "type": "news",
@@ -3383,23 +3400,6 @@
       "price_jpy": 990,
       "release_date": null,
       "purchase_url": "https://item.rakuten.co.jp/rakutenkobo-ebooks/9eebfbfd2dce3b07803f60a4e04a088c/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "raw_snippet": null
-    },
-    {
-      "id": "sha256:277a993e0084caf6",
-      "type": "goods",
-      "source_type": "ec",
-      "source_name": "逸品shopコレコレ",
-      "title": "あたしンち マスコット ユズヒコ【バンダイナムコヌイ】大人気 漫画キャラクター",
-      "url": "https://item.rakuten.co.jp/collecolle-teddy/661924/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
-      "collected_at": "2026-08-22T00:47:05.281317+00:00",
-      "description": null,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/collecolle-teddy/cabinet/08274649/imgrc0100845466.jpg?_ex=128x128",
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": 1210,
-      "release_date": null,
-      "purchase_url": "https://item.rakuten.co.jp/collecolle-teddy/661924/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
       "raw_snippet": null
     }
   ]

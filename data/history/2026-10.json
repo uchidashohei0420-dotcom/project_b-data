@@ -933,5 +933,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "かわいいね"
+  },
+  {
+    "id": "sha256:1fbaccd55ba07e66",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "ハッピーハロウィーン🎃 https://t.co/Y9qlDfw5tn",
+    "url": "https://x.com/atashinchi_new/status/2116334336920457275",
+    "collected_at": "2026-10-31T03:19:22.519079+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "ハッピーハロウィーン🎃 https://t.co/Y9qlDfw5tn"
   }
 ]
