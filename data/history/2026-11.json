@@ -1,0 +1,19 @@
+[
+  {
+    "id": "sha256:4abd57cac784c526",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "今日はすしの日なんだって🍣 https://t.co/K8uLvne0e5",
+    "url": "https://x.com/atashinchi_new/status/2116726935455690998",
+    "collected_at": "2026-11-01T03:18:12.827033+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "今日はすしの日なんだって🍣 https://t.co/K8uLvne0e5"
+  }
+]
