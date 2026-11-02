@@ -134,5 +134,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "ｒｔ♥️"
+  },
+  {
+    "id": "sha256:1398d53bf06a4257",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "もったいない本舗 楽天市場店",
+    "title": "【中古】 あたしンち（第7巻） / けら えいこ / KADOKAWA(メディアファクトリー) [コミック]【メール便送料無料】【最短翌日配達対応】",
+    "url": "https://item.rakuten.co.jp/comicset/4840103089/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-11-02T14:14:07.449169+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05268156/bkpjikhidxusxets.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 259,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/comicset/4840103089/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
   }
 ]

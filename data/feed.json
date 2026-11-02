@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-02T03:28:01.218826+00:00",
+  "generated_at": "2026-11-02T14:14:07.449169+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:1398d53bf06a4257",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "もったいない本舗 楽天市場店",
+      "title": "【中古】 あたしンち（第7巻） / けら えいこ / KADOKAWA(メディアファクトリー) [コミック]【メール便送料無料】【最短翌日配達対応】",
+      "url": "https://item.rakuten.co.jp/comicset/4840103089/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-11-02T14:14:07.449169+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comicset/cabinet/05268156/bkpjikhidxusxets.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 259,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/comicset/4840103089/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:8c2e7924f943d8e8",
       "type": "goods",
@@ -3384,23 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」、ユズヒコが、いい息子です😊\nhttps://t.co/U1YmZFVJsB"
-    },
-    {
-      "id": "sha256:4dcd7988c451d030",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "土用の丑の日は、このエピソード😊 https://t.co/DUWuFZ9dWo",
-      "url": "https://x.com/atashinchi_new/status/2081258117141262810",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "土用の丑の日は、このエピソード😊 https://t.co/DUWuFZ9dWo"
     }
   ]
 }
