@@ -151,5 +151,39 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/comicset/4840103089/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:2cb2d1fa0ddd3df3",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "AERAデジタル連載「タテ読みあたしンち」\n今月は、ユズヒコが、母に論破されます😊\n\nhttps://t.co/AM1QHMPd28",
+    "url": "https://x.com/atashinchi_new/status/2117575403674165408",
+    "collected_at": "2026-11-03T13:16:47.956994+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」\n今月は、ユズヒコが、母に論破されます😊\n\nhttps://t.co/AM1QHMPd28"
+  },
+  {
+    "id": "sha256:93edc97929d5406d",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "松岡茉優さんが、本屋さんでお買い物。「あたしンち」の話もたくさん😭😭🙏🙏🙏😭😭\n\n【松岡茉優】大好きな本屋でテンションMAX！頭の中を覗き見するお買い物に密着ッ",
+    "url": "https://x.com/atashinchi_new/status/2117557636183076974",
+    "collected_at": "2026-11-03T13:16:47.956994+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "松岡茉優さんが、本屋さんでお買い物。「あたしンち」の話もたくさん😭😭🙏🙏🙏😭😭\n\n【松岡茉優】大好きな本屋でテンションMAX！頭の中を覗き見するお買い物に密着ッ！【男ともだち】\nhttps://t.co/LMD5SmYNXi"
   }
 ]

@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-11-03T04:37:41.513573+00:00",
+  "generated_at": "2026-11-03T13:16:47.956994+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:2cb2d1fa0ddd3df3",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "AERAデジタル連載「タテ読みあたしンち」\n今月は、ユズヒコが、母に論破されます😊\n\nhttps://t.co/AM1QHMPd28",
+      "url": "https://x.com/atashinchi_new/status/2117575403674165408",
+      "collected_at": "2026-11-03T13:16:47.956994+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」\n今月は、ユズヒコが、母に論破されます😊\n\nhttps://t.co/AM1QHMPd28"
+    },
+    {
+      "id": "sha256:93edc97929d5406d",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "松岡茉優さんが、本屋さんでお買い物。「あたしンち」の話もたくさん😭😭🙏🙏🙏😭😭\n\n【松岡茉優】大好きな本屋でテンションMAX！頭の中を覗き見するお買い物に密着ッ",
+      "url": "https://x.com/atashinchi_new/status/2117557636183076974",
+      "collected_at": "2026-11-03T13:16:47.956994+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "松岡茉優さんが、本屋さんでお買い物。「あたしンち」の話もたくさん😭😭🙏🙏🙏😭😭\n\n【松岡茉優】大好きな本屋でテンションMAX！頭の中を覗き見するお買い物に密着ッ！【男ともだち】\nhttps://t.co/LMD5SmYNXi"
+    },
     {
       "id": "sha256:1398d53bf06a4257",
       "type": "goods",
@@ -3367,40 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "#イシイのミートボール大好き がトレンドだと聞いて😊 https://t.co/56SbqxmGD2"
-    },
-    {
-      "id": "sha256:f6b98a856c63ca07",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "おいしいですよね😊 https://t.co/2zWW1XpUzE",
-      "url": "https://x.com/atashinchi_new/status/2081637183912608115",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "おいしいですよね😊 https://t.co/2zWW1XpUzE"
-    },
-    {
-      "id": "sha256:454709aa856cf88c",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "AERAデジタル連載「タテ読みあたしンち」、ユズヒコが、いい息子です😊\nhttps://t.co/U1YmZFVJsB",
-      "url": "https://x.com/atashinchi_new/status/2081627692886286732",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "AERAデジタル連載「タテ読みあたしンち」、ユズヒコが、いい息子です😊\nhttps://t.co/U1YmZFVJsB"
     }
   ]
 }
