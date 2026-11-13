@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-13T04:09:03.228094+00:00",
+  "generated_at": "2026-11-13T13:38:50.269919+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:2bbfece1b6f373bf",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "あたしンち新作、配信スタートは、なんと1月1日から🇯🇵\n見てね見てね〜",
+      "url": "https://x.com/atashinchi_new/status/2121173890244510022",
+      "collected_at": "2026-11-13T13:38:50.269919+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "あたしンち新作、配信スタートは、なんと1月1日から🇯🇵\n見てね見てね〜"
+    },
     {
       "id": "sha256:a93610edf3a193d5",
       "type": "news",
@@ -3384,23 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "#あたしンちフル　こちらのハッシュタグから、過去のエピソードまるごと1話投稿、見られます😊"
-    },
-    {
-      "id": "sha256:28e3d2ca5cfbb714",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "ハンバーグの上に目玉焼き乗せていい？🍳 https://t.co/RrnvcvwbXD",
-      "url": "https://x.com/atashinchimovie/status/2082420914097172621",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "ハンバーグの上に目玉焼き乗せていい？🍳 https://t.co/RrnvcvwbXD"
     }
   ]
 }
