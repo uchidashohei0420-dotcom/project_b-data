@@ -423,5 +423,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "#あたしンちフル https://t.co/PzDX17fF7M"
+  },
+  {
+    "id": "sha256:5d3f2c18f2f05774",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "母「ヤニねこ」ダンス動画を作りました\n（けらさんが😊）\n\n「あたしンち」の新作が「ヤニねこ」の木村監督作品なのです😊\nhttps://t.co/nttLAU2c",
+    "url": "https://x.com/atashinchi_new/status/2121990039790125068",
+    "collected_at": "2026-11-16T03:52:09.892059+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "母「ヤニねこ」ダンス動画を作りました\n（けらさんが😊）\n\n「あたしンち」の新作が「ヤニねこ」の木村監督作品なのです😊\nhttps://t.co/nttLAU2cLh"
+  },
+  {
+    "id": "sha256:15147ed3fc601d8f",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "アニメ新作「あたしんちNEXT」、来年1月1日、配信開始❗見てね、見てね❗ https://t.co/W6DUO5ziry",
+    "url": "https://x.com/atashinchi_new/status/2121990688837669159",
+    "collected_at": "2026-11-16T03:52:09.892059+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "アニメ新作「あたしんちNEXT」、来年1月1日、配信開始❗見てね、見てね❗ https://t.co/W6DUO5ziry"
   }
 ]
