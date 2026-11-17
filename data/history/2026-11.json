@@ -525,5 +525,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "ナスオの大塚さんです😊（ナスオ、出番いっぱいあるよ！）"
+  },
+  {
+    "id": "sha256:6ff655b83795204b",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "「○○屋さん」という言い方、ちょっと気になる😊\n\nhttps://t.co/qkuUsC5eHF",
+    "url": "https://x.com/atashinchi_new/status/2122525145323761779",
+    "collected_at": "2026-11-17T05:44:40.539953+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "「○○屋さん」という言い方、ちょっと気になる😊\n\nhttps://t.co/qkuUsC5eHF"
   }
 ]

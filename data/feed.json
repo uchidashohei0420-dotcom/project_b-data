@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-16T14:18:57.427303+00:00",
+  "generated_at": "2026-11-17T05:44:40.539953+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:6ff655b83795204b",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "「○○屋さん」という言い方、ちょっと気になる😊\n\nhttps://t.co/qkuUsC5eHF",
+      "url": "https://x.com/atashinchi_new/status/2122525145323761779",
+      "collected_at": "2026-11-17T05:44:40.539953+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "「○○屋さん」という言い方、ちょっと気になる😊\n\nhttps://t.co/qkuUsC5eHF"
+    },
     {
       "id": "sha256:da6f58ebaf13bb44",
       "type": "goods",
@@ -3384,23 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "あたしンちバスボール、発売中です😊　全国のドラッグストア、量販店などにて😊 https://t.co/sFde9oAWY6"
-    },
-    {
-      "id": "sha256:4e2c5b2ce720700a",
-      "type": "event",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "帰ってきた！あたしンちフェア in KIDDY LAND  \n\n〜8/21まで  \n\n原宿店　梅田店　心斎橋パルコ店　四条河原町店　福岡パルコ店　鹿児島店  に",
-      "url": "https://x.com/atashinchi_new/status/2086778586757800281",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "帰ってきた！あたしンちフェア in KIDDY LAND  \n\n〜8/21まで  \n\n原宿店　梅田店　心斎橋パルコ店　四条河原町店　福岡パルコ店　鹿児島店  にて😊 https://t.co/0Q5EE0gF5m"
     }
   ]
 }
