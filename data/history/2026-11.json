@@ -593,5 +593,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "#あたしンちフル　これは、きっと、いい思い出😊 https://t.co/iKlIQ6CzuS"
+  },
+  {
+    "id": "sha256:9291f7bbff0cef88",
+    "type": "goods",
+    "source_type": "ec",
+    "source_name": "ブックオフ 楽天市場店",
+    "title": "【中古】 あたしンち(5)／けらえいこ(著者)",
+    "url": "https://item.rakuten.co.jp/bookoffonline/0015096204/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "collected_at": "2026-11-19T14:55:14.120757+00:00",
+    "description": null,
+    "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/bookoffonline/cabinet/1915/0015096204l.jpg?_ex=128x128",
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": 275,
+    "release_date": null,
+    "purchase_url": "https://item.rakuten.co.jp/bookoffonline/0015096204/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+    "raw_snippet": null
   }
 ]
