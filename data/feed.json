@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-20T04:54:37.003066+00:00",
+  "generated_at": "2026-11-20T14:36:51.317540+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:feae1a8aa58311ec",
+      "type": "goods",
+      "source_type": "ec",
+      "source_name": "ブックオフ 楽天市場店",
+      "title": "【中古】 あたしンち(3)／けらえいこ(著者)",
+      "url": "https://item.rakuten.co.jp/bookoffonline/0017402472/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "collected_at": "2026-11-20T14:36:51.317540+00:00",
+      "description": null,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/bookoffonline/cabinet/1197/0017402472l.jpg?_ex=128x128",
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": 484,
+      "release_date": null,
+      "purchase_url": "https://item.rakuten.co.jp/bookoffonline/0017402472/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
+      "raw_snippet": null
+    },
     {
       "id": "sha256:9291f7bbff0cef88",
       "type": "goods",
@@ -3384,23 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "「最後のブルトレ、母娘旅」\n\nhttps://t.co/5bm1rsn1Ki https://t.co/I6jFMxGoiX"
-    },
-    {
-      "id": "sha256:8b5a42f5659ca532",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "あたしンち夏の思い出😊このテーマもたくさん描きました😊 https://t.co/6ffavpag9s",
-      "url": "https://x.com/atashinchi_new/status/2087452779237302751",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "あたしンち夏の思い出😊このテーマもたくさん描きました😊 https://t.co/6ffavpag9s"
     }
   ]
 }
