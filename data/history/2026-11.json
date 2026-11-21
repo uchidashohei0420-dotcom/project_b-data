@@ -627,5 +627,39 @@
     "release_date": null,
     "purchase_url": "https://item.rakuten.co.jp/bookoffonline/0017402472/?rafcid=wsc_i_is_ea6a0751-2f9a-4552-bec1-e92701763ea7",
     "raw_snippet": null
+  },
+  {
+    "id": "sha256:ce819327a0b5bc68",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "水の分量をぴったりはかるユズヒコ、最高です😊\n\nhttps://t.co/syWnvAuu2G",
+    "url": "https://x.com/atashinchi_new/status/2124120857840951688",
+    "collected_at": "2026-11-21T13:54:41.392138+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "水の分量をぴったりはかるユズヒコ、最高です😊\n\nhttps://t.co/syWnvAuu2G"
+  },
+  {
+    "id": "sha256:17d7da508af3b75d",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "第2弾です😊",
+    "url": "https://x.com/atashinchi_new/status/2124120057387356430",
+    "collected_at": "2026-11-21T13:54:41.392138+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "第2弾です😊"
   }
 ]
