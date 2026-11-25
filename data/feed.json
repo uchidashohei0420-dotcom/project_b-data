@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-11-25T06:07:28.333892+00:00",
+  "generated_at": "2026-11-25T20:51:17.933353+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:fba0e068e14a89f2",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "実写化かと、思ってしまた😊",
+      "url": "https://x.com/atashinchi_new/status/2125549344070005094",
+      "collected_at": "2026-11-25T20:51:17.933353+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "実写化かと、思ってしまた😊"
+    },
+    {
+      "id": "sha256:f3b7d6eec1354b07",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "😭😭😭お父さん、娘ちゃん、がんばって",
+      "url": "https://x.com/atashinchi_new/status/2125547352106881309",
+      "collected_at": "2026-11-25T20:51:17.933353+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "😭😭😭お父さん、娘ちゃん、がんばって"
+    },
     {
       "id": "sha256:b0dc3d587d05e475",
       "type": "news",
@@ -3367,40 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "エッセイマンガ展、9月18日から、角川武蔵野ミュージアムに巡回😊🎉"
-    },
-    {
-      "id": "sha256:59446b7abd0cb060",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "さくらももこ、けらえいこ、まめきちまめこら27名の原画など約400点を展示　「わたしをすくう エッセイマンガの処... https://t.co/vGJA45u",
-      "url": "https://x.com/PRTIMES_ETM/status/2089564850423058934",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "さくらももこ、けらえいこ、まめきちまめこら27名の原画など約400点を展示　「わたしをすくう エッセイマンガの処... https://t.co/vGJA45uZZE"
-    },
-    {
-      "id": "sha256:38e745b4da6172c1",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "【朗報・拡散希望】\n「わたしをすくう　エッセイマンガの処方箋展」が角川武蔵野ミュージアムさんで９月１８日（金）から巡回することが決まりました😆９月１９日（土）に",
-      "url": "https://x.com/kayokokuramochi/status/2089577318939512864",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "【朗報・拡散希望】\n「わたしをすくう　エッセイマンガの処方箋展」が角川武蔵野ミュージアムさんで９月１８日（金）から巡回することが決まりました😆９月１９日（土）にはギャラリートークもするので、関東方面の方はぜひお越しください！ちなみに角川武蔵野ミュージアムがある所沢は、我が地元です。展示見て醤油香ばしい焼き団子と真っ黒いうどん食べよう！@Kadokawa_Museum"
     }
   ]
 }

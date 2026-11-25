@@ -746,5 +746,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "今日は1122「いい夫婦の日」😊夫婦の情景をアップします😊 https://t.co/lG0G22g3Cx"
+  },
+  {
+    "id": "sha256:fba0e068e14a89f2",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "実写化かと、思ってしまた😊",
+    "url": "https://x.com/atashinchi_new/status/2125549344070005094",
+    "collected_at": "2026-11-25T20:51:17.933353+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "実写化かと、思ってしまた😊"
+  },
+  {
+    "id": "sha256:f3b7d6eec1354b07",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "😭😭😭お父さん、娘ちゃん、がんばって",
+    "url": "https://x.com/atashinchi_new/status/2125547352106881309",
+    "collected_at": "2026-11-25T20:51:17.933353+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "😭😭😭お父さん、娘ちゃん、がんばって"
   }
 ]
