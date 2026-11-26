@@ -780,5 +780,39 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "😭😭😭お父さん、娘ちゃん、がんばって"
+  },
+  {
+    "id": "sha256:5d9be7cfe26245e1",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "今日は１１２６いい風呂の日😊\nバスタオル一枚は、昭和だね😊 https://t.co/n6zZK1csGr",
+    "url": "https://x.com/atashinchi_new/status/2125914561744404623",
+    "collected_at": "2026-11-26T16:31:22.637162+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "今日は１１２６いい風呂の日😊\nバスタオル一枚は、昭和だね😊 https://t.co/n6zZK1csGr"
+  },
+  {
+    "id": "sha256:4b0e0172c907f9bd",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "今日は１１２６いい風呂の日😊",
+    "url": "https://x.com/atashinchi_new/status/2125896549305926134",
+    "collected_at": "2026-11-26T16:31:22.637162+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "今日は１１２６いい風呂の日😊"
   }
 ]
