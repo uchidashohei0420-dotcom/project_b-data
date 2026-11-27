@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-27T05:53:06.196772+00:00",
+  "generated_at": "2026-11-27T15:50:38.663067+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:0288323aa6cac5f9",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "ブラックフライデーって何？ https://t.co/JLYPbJY2td",
+      "url": "https://x.com/atashinchi_new/status/2126220576960512341",
+      "collected_at": "2026-11-27T15:50:38.663067+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "ブラックフライデーって何？ https://t.co/JLYPbJY2td"
+    },
     {
       "id": "sha256:5d9be7cfe26245e1",
       "type": "news",
@@ -3384,23 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "「路傍のフジイ」の人だ（今知った）😊\n「路傍のフジイ」完結、おめでとうございます😊"
-    },
-    {
-      "id": "sha256:2071d9ccc2be7551",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "あたしンちスーパー買って読み始めたんだけど1話からLINEが登場して感動してるんだけど、母のLINEのアイコンが漢字一文字の「夢」で爆笑してる",
-      "url": "https://x.com/_LOLITA_A_GO_GO/status/2085366021129687277",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "あたしンちスーパー買って読み始めたんだけど1話からLINEが登場して感動してるんだけど、母のLINEのアイコンが漢字一文字の「夢」で爆笑してる"
     }
   ]
 }

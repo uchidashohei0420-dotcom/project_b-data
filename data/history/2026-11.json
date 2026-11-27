@@ -814,5 +814,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "今日は１１２６いい風呂の日😊"
+  },
+  {
+    "id": "sha256:0288323aa6cac5f9",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "ブラックフライデーって何？ https://t.co/JLYPbJY2td",
+    "url": "https://x.com/atashinchi_new/status/2126220576960512341",
+    "collected_at": "2026-11-27T15:50:38.663067+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "ブラックフライデーって何？ https://t.co/JLYPbJY2td"
   }
 ]
