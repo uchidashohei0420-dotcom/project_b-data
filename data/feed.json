@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-11-27T15:50:38.663067+00:00",
+  "generated_at": "2026-11-28T05:33:00.917085+00:00",
   "schema_version": 1,
   "items": [
+    {
+      "id": "sha256:7d49ab0b4ea62f56",
+      "type": "news",
+      "source_type": "sns",
+      "source_name": "@atashinchi_new",
+      "title": "ぴったりの水の量をはかるユズヒコ。\n\nあたしンち×ミツカンコラボ動画「ゆず香るふわとろかきたまうどん」編😊\n\nhttps://t.co/swdmdZ90NT h",
+      "url": "https://x.com/atashinchi_new/status/2126526498362511492",
+      "collected_at": "2026-11-28T05:33:00.917085+00:00",
+      "description": null,
+      "image_url": null,
+      "event_datetime": null,
+      "location": null,
+      "price_jpy": null,
+      "release_date": null,
+      "purchase_url": null,
+      "raw_snippet": "ぴったりの水の量をはかるユズヒコ。\n\nあたしンち×ミツカンコラボ動画「ゆず香るふわとろかきたまうどん」編😊\n\nhttps://t.co/swdmdZ90NT https://t.co/uClr74hbF7"
+    },
     {
       "id": "sha256:0288323aa6cac5f9",
       "type": "news",
@@ -3384,23 +3401,6 @@
       "release_date": null,
       "purchase_url": null,
       "raw_snippet": "これでユーちゃんパート歌ってたら惚れてしまうかも。 https://t.co/tohWF2wUBj"
-    },
-    {
-      "id": "sha256:bd2dd0bd10b06fda",
-      "type": "news",
-      "source_type": "sns",
-      "source_name": "@atashinchi_new",
-      "title": "「路傍のフジイ」の人だ（今知った）😊\n「路傍のフジイ」完結、おめでとうございます😊",
-      "url": "https://x.com/atashinchi_new/status/2089980059662827724",
-      "collected_at": "2026-08-22T01:29:06.318101+00:00",
-      "description": null,
-      "image_url": null,
-      "event_datetime": null,
-      "location": null,
-      "price_jpy": null,
-      "release_date": null,
-      "purchase_url": null,
-      "raw_snippet": "「路傍のフジイ」の人だ（今知った）😊\n「路傍のフジイ」完結、おめでとうございます😊"
     }
   ]
 }

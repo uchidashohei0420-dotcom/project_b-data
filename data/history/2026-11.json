@@ -831,5 +831,22 @@
     "release_date": null,
     "purchase_url": null,
     "raw_snippet": "ブラックフライデーって何？ https://t.co/JLYPbJY2td"
+  },
+  {
+    "id": "sha256:7d49ab0b4ea62f56",
+    "type": "news",
+    "source_type": "sns",
+    "source_name": "@atashinchi_new",
+    "title": "ぴったりの水の量をはかるユズヒコ。\n\nあたしンち×ミツカンコラボ動画「ゆず香るふわとろかきたまうどん」編😊\n\nhttps://t.co/swdmdZ90NT h",
+    "url": "https://x.com/atashinchi_new/status/2126526498362511492",
+    "collected_at": "2026-11-28T05:33:00.917085+00:00",
+    "description": null,
+    "image_url": null,
+    "event_datetime": null,
+    "location": null,
+    "price_jpy": null,
+    "release_date": null,
+    "purchase_url": null,
+    "raw_snippet": "ぴったりの水の量をはかるユズヒコ。\n\nあたしンち×ミツカンコラボ動画「ゆず香るふわとろかきたまうどん」編😊\n\nhttps://t.co/swdmdZ90NT https://t.co/uClr74hbF7"
   }
 ]
